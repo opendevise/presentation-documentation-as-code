@@ -1,0 +1,51 @@
+= Write in AsciiDoc, Publish Everywhere!
+Dan Allen <dan@opendevise.io>
+
+[abstract]
+--
+// tag:abstract[]
+AsciiDoc takes the pain out of writing and keeps your content DRY.
+As with any solution, you need to learn the tools and best practices to be effective, such as:
+
+* How to organize your documentation
+* How to make your documentation approachable to contributors
+* How to make your documentation easy to maintain
+* What tools to use to simplify collaboration & maximize reuse
+
+I'll address some of the challenges I've encountered while writing documentation in AsciiDoc, offer a set of tips and recommendations that have helped me improve my writing flow, evaluate the tools available in the Asciidoctor ecosystem and provide advice on how to keep presentation from leaking into your content...and why that matters.
+
+Get ready to write once in AsciiDoc and publish everywhere!
+// end:abstract[]
+--
+
+== View online
+
+http://mojavelinux.github.io/presentation-write-in-asciidoc-publish-everywhere/[Slides]
+&middot;
+https://raw.githubusercontent.com/mojavelinux/presentation-write-in-asciidoc-publish-everywhere/master/src/notes/script.adoc[Script]
+
+== Build and view slides locally
+
+First, ensure you have the following installed:
+
+. http://nodejs.org[Node.js]
+. http://gulpjs.com[Gulp CLI]
+
+ $ npm install -g gulp-cli
+
+. https://www.ruby-lang.org/[Ruby >= 2]
+
+ $ rvm use 2.3.1 --install
+
+. http://bundler.io/[Bundler]
+
+ $ gem install bundler
+
+Next, install dependencies (if not already installed by the generator):
+
+ $ npm install
+   bundle install --path=.bundle/gems
+
+Finally, build and serve the presentation!
+
+ $ gulp serve

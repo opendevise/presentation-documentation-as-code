@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xml:lang="en"
+    xmlns:xl="http://www.w3.org/1999/xlink" version="5.0">
+  <info>
+    <title>Introduction to AsciiDoc</title>
+    <date>2016-10-07</date>
+    <author>
+      <personname>
+        <firstname>Author</firstname>
+        <surname>Name</surname>
+      </personname>
+    </author>
+    <authorinitials>AN</authorinitials>
+  </info>
+  <abstract>
+    <simpara>
+      The abstract&#8212;&#8203;the façade of your article&#8212;&#8203;goes here.
+    </simpara>
+  </abstract>
+  <section xml:id="_introduction">
+    <title>Introduction</title>
+    <simpara>Here&#8217;s the text of your introduction.</simpara>
+    <informalequation xml:id="simple_equation">
+      <alt><![CDATA[\alpha = \sqrt{ \beta }]]></alt>
+      <mathphrase><![CDATA[\alpha = \sqrt{ \beta }]]></mathphrase>
+    </informalequation>
+    <section xml:id="_subsection_heading_here">
+      <title>Subsection Heading</title>
+      <simpara>Write your subsection text here.</simpara>
+      <figure xml:id="simulation_figure">
+        <title>Simulation Results</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/figure.png"/>
+          </imageobject>
+          <textobject><phrase>figure</phrase></textobject>
+        </mediaobject>
+      </figure>
+    </section>
+  </section>
+  <section xml:id="_conclusion">
+    <title>Conclusion</title>
+    <simpara>Write your conclusion here.</simpara>
+  </section>
+</article>

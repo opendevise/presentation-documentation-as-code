@@ -1,0 +1,13 @@
+= Image Credits
+
+// tag::list[]
+* Businessmen Illustrations - http://www.123rf.com/profile_jjesadaphorn
+* Bobcat - https://www.instagram.com/p/BI060cwgk6g[Steve Gifford via @usfws on Instagram]
+* Great Horned Owl - https://www.youtube.com/watch?v=PyNYj7TAASE[JCMDI.com]
+* Douglas Squirrel - https://www.instagram.com/p/BK37s9mAxGv[Mick Thompson via @usfws on Instagram]
+* Bowerbird Nest - https://www.flickr.com/photos/27578366@N06/3063476368[Barry Hatton on Flickr]
+* Red Fox - https://www.instagram.com/p/BLEzNivArjW[Steve Gifford via @usfws on Instagram]
+* Longs Peak Above Bear Lake - https://www.instagram.com/p/BCrAEqXKJ7O[@hanemannphoto on Instagram]
+* The Loch - https://www.instagram.com/p/BKzK0DJj6Aa[@bluemountainbel on Instagram]
+* American Badger - https://www.instagram.com/p/BGm2kpNRuXS[@usfws on Instagram]
+// end::list[]

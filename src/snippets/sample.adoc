@@ -1,0 +1,27 @@
+= Introduction to AsciiDoc
+Author Name
+:imagesdir: images
+:sectnums:
+:toc:
+
+[abstract]
+The abstract--the façade of your article--goes here.
+
+== Introduction
+
+Here's the text of your introduction.
+
+[stem#simple_equation]
+++++
+\alpha = \sqrt{ \beta }
+++++
+
+=== Subsection Heading
+
+Write your subsection text here.
+
+image::figure.png[id=simulation_figure,title="Simulation Results"]
+
+== Conclusion
+
+Write your conclusion here.

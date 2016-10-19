@@ -1,0 +1,506 @@
+= Write in AsciiDoc, Publish Everywhere!
+Dan Allen
+:organization: Open Devise
+:twitter: @mojavelinux
+//Dan Allen <http://opendevise.io[@mojavelinux]>
+:!sectids:
+:icons: font
+:imagesdir: images
+:source-highlighter: pygments
+:pygments-style: bw
+:pygments-css: style
+:uri-script: notes/script.adoc
+
+[.cue]
+****
+include::{uri-script}[tag=title]
+****
+
+[#print-shop-box]
+== !
+
+//image::print-shop-box.jpg[role=contain]
+image::print-shop-home.jpg[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=print-shop-box]
+****
+
+== !
+
+image::print-shop-select.jpg[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=print-shop-select]
+****
+
+[#print-long-banner]
+== !
+
+image::imagewriter-banner-long.jpg[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=print-long-banner]
+****
+
+== !
+
+image::imagewriter-color-ribbon-cartridge.jpg[]
+
+[.cue]
+****
+include::{uri-script}[tag=color-ribbon-cartridge]
+****
+
+== !
+
+image::imagewriter-banner.jpg[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=print-banner]
+****
+
+== !
+image::businessmen-pointing.svg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=many-masters]
+****
+
+[.axis.contrast]
+== !
+
+* Content
+* Presentation
+
+[.cue]
+****
+include::{uri-script}[tag=separate]
+****
+
+//== Evaluate
+//
+//* What are the capabilities of the content solution?
+//* How do those capabilities align with your needs?
+
+[.agenda%build]
+== !
+
+[%build]
+// maybe keyboard-o for creation instead
+* icon:paint-brush[fw] Creation
+* icon:send[fw] Publication
+// maybe group for collaboration instead
+* icon:code-fork[fw] Collaboration
+
+[.cue]
+****
+include::{uri-script}[tag=agenda]
+****
+
+[.topic]
+== Creation
+
+[.context]
+icon:paint-brush[fw,role=active] icon:send[fw] icon:code-fork[fw]
+
+[.cue]
+****
+include::{uri-script}[tag=creation]
+****
+
+== !
+image::confined-bobcat.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=confined]
+****
+
+[.subject]
+== DocBook
+
+[.cue]
+****
+include::{uri-script}[tag=docbook]
+****
+
+[.sheet%conceal]
+== DocBook Example (Part 1)
+
+[source,xml]
+----
+include::snippets/sample.xml[lines=1..24]
+...
+----
+
+[.sheet%conceal]
+== DocBook Example (Part 2)
+
+[source,xml]
+----
+...
+include::snippets/sample.xml[lines=25..-1]
+----
+
+== !
+image::stunned-owl.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=docbook-critique-a]
+****
+
+== !
+image::stuck-swan.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=docbook-critique-b]
+****
+
+[.subject]
+== LaTeX
+
+[.cue]
+****
+include::{uri-script}[tag=latex]
+****
+
+[.sheet%conceal]
+== LaTeX Example
+
+[source,tex]
+----
+include::snippets/sample.tex[]
+----
+
+== !
+image::skeptical-squirrel.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=latex-critique-a]
+****
+
+== !
+image::bowerbird-nest.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=latex-critique-b]
+****
+
+== Got icon:file-pdf-o[fw]?
+
+[.cue]
+****
+include::{uri-script}[tag=got-pdf]
+****
+
+[.subject]
+== AsciiDoc
+
+[.cue]
+****
+include::{uri-script}[tag=asciidoc]
+****
+
+[.sheet%conceal]
+== AsciiDoc Example
+
+[source,asciidoc]
+----
+include::snippets/sample.adoc[]
+----
+
+== !
+image::hungry-fox.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-critique]
+****
+
+[%build%conceal]
+== AsciiDoc Characteristics
+
+[%build.spotlight]
+* clear & concise
+* paragraphs are paragraphs
+* familiar conventions
+* common terminology
+* forgiving syntax
+* consistent, repeatable patterns
+//* line-oriented, left-aligned
+* semantic
+
+[.sheet%conceal]
+== Role Examples
+
+[source,asciidoc]
+----
+[.path]#gradle/wrapper/gradle-wrapper.properties#
+
+[.topic]
+== Service Workers
+
+[.cue]
+****
+Don't forget to say these words.
+****
+----
+
+== !
+image::align-left.svg[width=250]
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+.Sidebar Title
+====
+First paragraph in the sidebar.
+
+Another paragraph in the sidebar.
+====
+----
+
+== No WYSIWYG?
+
+== **Y**ou **G**et **W**hat **Y**ou **G**et
+
+[%build]
+--
+[discrete]
+== `+¯\_(ツ)_/¯+`
+--
+
+== IDE for Writers
+
+== !
+
+.Atom
+image::ss-atom-asciidoc-preview.png[role=contain]
+
+//AsciidocFX; show outline
+//IntelliJ IDEA
+
+== Creation: Recommended Practices
+
+[.cue]
+****
+include::{uri-script}[tag=creation-recommended-practices]
+****
+
+== Migration
+
+[.cue]
+****
+include::{uri-script}[tag=migration]
+****
+
+== !
+image::breaking-dawn-longs-peak.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=dawn]
+****
+
+[.topic]
+== Publication
+
+[.context]
+icon:paint-brush[fw] icon:send[fw,role=active] icon:code-fork[fw]
+
+[.cue]
+****
+include::{uri-script}[tag=publication]
+****
+
+[.axis]
+== !
+
+* icon:file-text[] AsciiDoc
+** syntax
+* icon:wrench[] Asciidoctor
+** parser + tools
+
+[.axis.contrast]
+== !
+
+* AsciiDoc
+//* Output
+* Presentation Formats
+[%build]
+** HTML
+** DocBook
+** PDF
+** EPUB3
+** Slides
+//** icon:line-chart[fw]
+** icon:question-circle[fw]
+
+[.cue]
+****
+include::{uri-script}[tag=conversion]
+****
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+[tabs]
+======
+.Visual Editor
+[tab]
+=====
+Describe how to use the visual editor and show some screenshots.
+=====
+
+.XML Editor
+[tab]
+=====
+Describe how to do the same thing in the XML editor.
+=====
+======
+----
+
+== AST icon:random[fw]
+
+== !
+
+[source,asciidoc]
+----
+lorem::sentences[5]
+----
+
+== !
+
+[source,ruby]
+----
+include::snippets/asciidoctor-extension.rb[]
+----
+
+== !
+
+....
+  Scribed     Generated
+        \     /
+          \ /
+           v
+        AsciiDoc
+           |
+           v
+       Converter
+           |
+           v
+   Presentation Format 
+....
+
+// Subject slide for Spring REST Docs?
+
+== !
+
+> I can do truly amazing things with my AsciiDoc source.
+> -- Scott Chacon, author of Pro Git
+
+== "`Push to Publish`"
+
+////
+[.axis.contrast]
+== !
+
+* AsciiDoc
+* Export Formats
+//** AsciiDoc
+//** Markdown
+//** DocBook
+//** Mallard
+////
+
+== !
+image::mountains-everywhere.jpg[role=canvas]
+
+== Publication: Recommended Practices
+
+[.cue]
+****
+include::{uri-script}[tag=publication-recommended-practices]
+****
+
+[.topic]
+== Collaboration
+
+[.context]
+icon:paint-brush[fw] icon:send[fw] icon:code-fork[fw,role=active]
+
+[.cue]
+****
+include::{uri-script}[tag=collaboration]
+****
+
+== !
+
+> The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed--from several a year to several a week. ...
+
+== !
+
+> ...{sp}Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
+> Preliminary results hint that this is an observable trend.
+> -- JBoss BxMS Engineering Team
+
+== !
+image::confident-badger.jpg[role=canvas]
+
+== icon:github[] [.underline]#Edit on GitHub#
+
+== AsciiDoc icon:github[] GitHub
+
+== Docs = Code
+
+== !
+
+image::ss-git-changes.png[role=contain]
+
+== !
+
+image::ss-source-diff.png[role=contain]
+
+== !
+
+image::ss-rich-diff.png[role=contain]
+
+== !
+
+image::ss-code-review.png[role=contain]
+
+== Collaboration: Recommended Practices
+
+[.cue]
+****
+include::{uri-script}[tag=collaboration-recommended-practices]
+****
+
+[.agenda.recap]
+== !
+
+* icon:paint-brush[fw] Creation
+* icon:send[fw] Publication
+* icon:code-fork[fw] Collaboration
+
+[.overlay]
+== Write in AsciiDoc, Publish Everywhere!
+image::mountains-everywhere.jpg[role=canvas]
+
+== Image Credits
+
+include::{imagesdir}/_credits.adoc[tag=list]

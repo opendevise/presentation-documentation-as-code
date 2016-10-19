@@ -1,0 +1,161 @@
+= Write in AsciiDoc, Publish Everywhere: Brainstorm
+
+== Big Idea / Purpose
+
+To present/articulate why AsciiDoc and the Asciidoctor toolchain is a sound investment for your content effort.
+
+* toolchain
+* format
+* growth
+* philosophy
+* strategy
+* comprehension of technical problem
+* applicability
+
+== Ideas
+
+content lives many lives, has many masters
+
+what are the capabilities? what are your needs?
+
+I believe there are three capabilities to consider when evaluating the value proposition of a content platform.
+
+. creation
+. publication
+. collaboration
+
+creation::
+* this section is about AsciiDoc the syntax; it speaks to the writers
+* why AsciiDoc accomodates creation:
+  - familiar conventions and terminology
+  - clear & concise ("I can see clearly now, the tags are gone. I can see all obstacles in my way.")
+  - consistent, repeatable patterns
+  - line-oriented, left-aligned (leverage the medium)
+  - semantic (promotes separation, informs transformation)
+* dialects via conventions or extensions
+* partition -> composable, referencable
+* partial (tag) includes
+* DRY / single source of truth
+* xrefs
+* conversion to AsciiDoc is relatively easy; many groups have done it
+
+publication::
+* this section is about Asciidoctor, the processor; it speaks to the engineers
+* what can/do you do with the content now that you have it?
+* separation of content and presentation
+* you are free to interpret the content anyway you like
+* there's a default interpretation of the content by the built-in converters
+* examples of extension / interpretation:
+  - tabs, background image for slide, import PDF page, slide notes
+* database of information (digest, catalog, library, source of record), not textual representation of output
+* cite ways to extend, customize, integrate
+* cite examples of "everywhere" (i.e., channels)
+* _transformation_ is the key to being able to publish to multiple channels
+* AsciiDoc as a target format
+  - either leverage the toolchain or for hybrid content (part generated, part scribed)
+* toolchain can be an orchestrator for weaving together content sources
+* endless possibilities for your content
+* future proof, no-lockin; transformation capability can be leverages to migrate to another format
+* queryable / mine for information in a contextual way
+* can be used to populate a search index or content/site map
+* publication can tap into the history via VCS
+
+collaboration::
+* this section is speaks to both the writers and the engineers as a collective
+* VCS-friendly (no binary blobs)
+* quote about increase in contributions; force of contribution
+> The OpenShift team, who had undertaken a similar effort, reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed—from several a year to several a week.
+> Even without much announcement, mere days after the migration, we started seeing incoming Merge Requests in GitLab, where there were none before.
+> It may be too soon to judge, but preliminary results hint that this indeed is an observable trend.
+* Nothing drives that more, invites participation more, than the "Edit on GitHub" link
+<Screenshot of Edit on GitHub link>
+* works well with code review tools
+* docs = code
+* issue tracker
+* work using your own tools, own writing environment
+* no need for special, proprietary, costly tools
+* work in different part of files w/o conflict
+* well-factored, modular
+* consider using the topic-based authoring method
+* "happy people collaborate well" (or are more inclined to)
+* easier to moniter the workflow (i.e., "what changed?")
+* practices that enhance collaboration, like sentence-per-line
+
+== Responses to Questions Posed by Abstract
+
+=== How to organize your documentation
+
+* group content by version line; each discrete content container should have its own git repository
+  - contrast to "library layout", where there is one directory for each book
+* use branches to maintain different versions to leverage capabilities of VCS
+  - AsciiBinder is an example of a tool that encourages this model
+* try to avoid coupling source file with output path
+* give the document a "business ID" so you can track it migrates
+* make sure you start with a good foundation; much harder to fix cross-cutting problems after writing has started
+* ...
+
+=== How to make your documentation approachable to contributors
+
+* GitHub
+* code review tools
+* document templates
+* writing style guide; for syntax, for structure, for patterns, for voice (automate the human)
+  - The style guide ensures that after the conversion, all writers know what conventions they should adhere to. 
+  - This can drastically curtail expensive micro-migrations
+* don't impose tool/editor choices
+* consistent, discoverable structure
+* "happy people collaborate well" (or are more inclined to)
+* ...
+
+=== How to make your documentation easy to maintain
+
+* DRY (use includes for shared and imported content)
+  - AsciiDoc can even share content across multiple repositories
+  - consider using the topic-based authoring method
+  - generate reference material
+* modular
+* standardized layout
+* automated builds
+* validation
+* continuous integration / deployment; "(git) push to publish"
+* don't mix migration changes with content changes
+* if you do migrate, do it quickly and don't go half way
+* ...
+
+=== What tools to use to simplify collaboration & maximize reuse
+
+* VCS like git
+* have an issue tracker for your content
+* organize issues into milestones that represent capabilities
+* DocBookRx to convert from DocBook to AsciiDoc; a PSA about pandoc
+* ...
+
+== Slide Concepts
+
+* Capabilities as striped list (maybe with some icons)
+* Writer's Write
+* Stunned (or irritated ) owl reacting to DocBook
+* Skeptical squirrel reacting to LaTeX
+* Bird nest for LaTeX
+* Left alignment editor icon to represent line-oriented + left-aligned
+
+== Image Concepts
+
+* content-many-directions - one sign pointing to marketing, another to developers
+  - http://www.123rf.com/photo_27673812_stock-photo.html
+  - related: http://www.123rf.com/photo_27673718_stock-vector-businessman-showing-bigger-and-brighter-lightbulb-representing-to-getting-bigger-idea-and-thought.html
+* breaking-dawn-bear-lake - it's the beginning of a great day
+* confident-badger - hold your head high knowing you made the right choice
+* confined-bobcat - ever feel like your CMS has confined your options?
+* fox-delicious - now that looks like something I could sink my teeth into
+* mountains-everywhere - feel the freedom to publish everywhere
+* perked-sea-otter - okay, this sounds interesting; contributors popping up
+* skeptical-squirrel - what are you trying to sell me?
+
+== Resources
+
+* https://www.youtube.com/watch?v=T5-yfMgrKPA[How I left my word processor and embraced Asciidoc by George Goh]
+* https://github.com/silasrh/multi-topic-level-repo-template
+* http://tedium.co/2016/06/02/the-print-shop-banner-decade/[A Banner Decade]
+* http://www.atarimagazines.com/compute/issue58/review_print_shop.html
+* http://www.theatlantic.com/technology/archive/2016/05/before-emoji-there-was-the-print-shop/483276/
