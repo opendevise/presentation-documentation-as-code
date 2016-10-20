@@ -53,8 +53,8 @@ It was not only my first publishing experience, but also my first collaborative 
 == Introduction
 
 // tag::many-masters[]
-Our technical content today has much to say and serves many masters, just as the content did in that childhood print shop.
-It's essential that your content workflow be flexible enough to meet those demands.
+Our technical content today has much to say and must serve many masters, just as the content did in that childhood print shop.
+It's essential that your content workflow be flexible enough to meet these demands.
 // end::many-masters[]
 
 // tag::separate[]
