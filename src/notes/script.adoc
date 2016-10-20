@@ -1,4 +1,4 @@
-= Write in AsciiDoc, Publish Everywhere: Transcript
+= Write in AsciiDoc, Publish Everywhere: Script
 
 // tag::title[]
 Welcome everyone!

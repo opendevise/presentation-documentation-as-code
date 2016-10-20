@@ -1,8 +1,8 @@
 = Write in AsciiDoc, Publish Everywhere!
 Dan Allen
+//Dan Allen <http://opendevise.io[@mojavelinux]>
 :organization: Open Devise
 :twitter: @mojavelinux
-//Dan Allen <http://opendevise.io[@mojavelinux]>
 :!sectids:
 :icons: font
 :imagesdir: images
