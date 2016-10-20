@@ -20,9 +20,9 @@ Get ready to write once in AsciiDoc and publish everywhere!
 
 == View online
 
-http://mojavelinux.github.io/presentation-write-in-asciidoc-publish-everywhere/[Slides]
+http://mojavelinux.github.io/presentation-write-in-asciidoc-publish-everywhere[Slides]
 &middot;
-https://raw.githubusercontent.com/mojavelinux/presentation-write-in-asciidoc-publish-everywhere/master/src/notes/script.adoc[Script]
+https://github.com/mojavelinux/presentation-write-in-asciidoc-publish-everywhere/blob/jaxlondon-2016/src/notes/script.adoc[Script]
 
 == Build and view slides locally
 
