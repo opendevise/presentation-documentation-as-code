@@ -228,7 +228,7 @@ include::{uri-script}[tag=asciidoc-critique]
 ****
 
 [%build%conceal]
-== AsciiDoc Characteristics
+== AsciiDoc Qualities
 
 [%build.spotlight]
 * clear & concise
@@ -239,6 +239,11 @@ include::{uri-script}[tag=asciidoc-critique]
 * consistent, repeatable patterns
 //* line-oriented, left-aligned
 * semantic
+
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-qualities]
+****
 
 [.sheet%conceal]
 == Role Examples
@@ -256,8 +261,18 @@ Don't forget to say these words.
 ****
 ----
 
+[.cue]
+****
+include::{uri-script}[tag=ex-roles]
+****
+
 == !
 image::align-left.svg[width=250]
+
+[.cue]
+****
+include::{uri-script}[tag=left-aligned-lines]
+****
 
 [.sheet]
 == !
@@ -272,7 +287,17 @@ Another paragraph in the sidebar.
 ====
 ----
 
+[.cue]
+****
+include::{uri-script}[tag=ex-delimited-block]
+****
+
 == No WYSIWYG?
+
+[.cue]
+****
+include::{uri-script}[tag=wysiwyg]
+****
 
 == **Y**ou **G**et **W**hat **Y**ou **G**et
 
@@ -282,15 +307,31 @@ Another paragraph in the sidebar.
 == `+¯\_(ツ)_/¯+`
 --
 
+[.cue]
+****
+include::{uri-script}[tag=ygwyg]
+****
+
 == IDE for Writers
+
+[.cue]
+****
+include::{uri-script}[tag=ide-for-writers]
+****
 
 == !
 
 .Atom
 image::ss-atom-asciidoc-preview.png[role=contain]
 
-//AsciidocFX; show outline
-//IntelliJ IDEA
+[.cue]
+****
+include::{uri-script}[tag=atom]
+****
+
+//.TODO
+//- AsciidocFX; show outline
+//- IntelliJ IDEA
 
 == Creation: Recommended Practices
 
@@ -333,6 +374,11 @@ include::{uri-script}[tag=publication]
 * icon:wrench[] Asciidoctor
 ** parser + tools
 
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-vs-asciidoctor]
+****
+
 [.axis.contrast]
 == !
 
@@ -374,7 +420,17 @@ Describe how to do the same thing in the XML editor.
 ======
 ----
 
+[.cue]
+****
+include::{uri-script}[tag=ex-extensions]
+****
+
 == AST icon:random[fw]
+
+[.cue]
+****
+include::{uri-script}[tag=ast]
+****
 
 == !
 
@@ -406,6 +462,11 @@ include::snippets/asciidoctor-extension.rb[]
    Presentation Format 
 ....
 
+[.cue]
+****
+include::{uri-script}[tag=aggregate]
+****
+
 // Subject slide for Spring REST Docs?
 
 == !
@@ -413,7 +474,17 @@ include::snippets/asciidoctor-extension.rb[]
 > I can do truly amazing things with my AsciiDoc source.
 > -- Scott Chacon, author of Pro Git
 
+[.cue]
+****
+include::{uri-script}[tag=endless-possibilities]
+****
+
 == "`Push to Publish`"
+
+[.cue]
+****
+include::{uri-script}[tag=push-to-publish]
+****
 
 ////
 [.axis.contrast]
@@ -429,6 +500,11 @@ include::snippets/asciidoctor-extension.rb[]
 
 == !
 image::mountains-everywhere.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=publish-everywhere]
+****
 
 == Publication: Recommended Practices
 
@@ -452,24 +528,54 @@ include::{uri-script}[tag=collaboration]
 
 > The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed--from several a year to several a week. ...
 
+[.cue]
+****
+include::{uri-script}[tag=redhat-endorsement]
+****
+
 == !
 
 > ...{sp}Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
 > Preliminary results hint that this is an observable trend.
 > -- JBoss BxMS Engineering Team
 
+[.cue]
+****
+include::{uri-script}[tag=redhat-endorsement]
+****
+
 == !
 image::confident-badger.jpg[role=canvas]
 
 == icon:github[] [.underline]#Edit on GitHub#
 
+[.cue]
+****
+include::{uri-script}[tag=edit-on-github]
+****
+
 == AsciiDoc icon:github[] GitHub
 
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-github-support]
+****
+
 == Docs = Code
+
+[.cue]
+****
+include::{uri-script}[tag=docs-as-code]
+****
 
 == !
 
 image::ss-git-changes.png[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=code-review]
+****
 
 == !
 
@@ -497,9 +603,19 @@ include::{uri-script}[tag=collaboration-recommended-practices]
 * icon:send[fw] Publication
 * icon:code-fork[fw] Collaboration
 
+[.cue]
+****
+include::{uri-script}[tag=recap]
+****
+
 [.overlay]
 == Write in AsciiDoc, Publish Everywhere!
 image::mountains-everywhere.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=fin]
+****
 
 == Image Credits
 
