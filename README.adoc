@@ -1,28 +1,26 @@
-= Write in AsciiDoc, Publish Everywhere!
-Dan Allen <dan@opendevise.io>
+= Documentation as Code: Balancing Writing & Delivery with Asciidoctor
+Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
 
 [abstract]
 --
 // tag:abstract[]
-AsciiDoc takes the pain out of writing and keeps your content DRY.
-As with any solution, you need to learn the tools and best practices to be effective, such as:
+Producing good documentation requires as much engineering ability as it does writing talent.
+But all too often, we focus on the needs of one group while tormenting the other with a cumbersome process.
+In this talk, I'll explain how managing documentation as code balances roles, responsibilities & delivery to produce the best documentation product.
 
-* How to organize your documentation
-* How to make your documentation approachable to contributors
-* How to make your documentation easy to maintain
-* What tools to use to simplify collaboration & maximize reuse
+For the writer, the AsciiDoc markup language takes the pain out of writing, keeps content separate from presentation, and makes the documentation source control friendly.
+The Asciidoctor processor enables the engineer to transform this plain text content into a variety of presentation formats for distribution to multiple channels and audiences.
+Together, these two groups can collaborate like never before by leveraging a proven workflow based on source control, automation, and continuous delivery.
 
-I'll address some of the challenges I've encountered while writing documentation in AsciiDoc, offer a set of tips and recommendations that have helped me improve my writing flow, evaluate the tools available in the Asciidoctor ecosystem and provide advice on how to keep presentation from leaking into your content...and why that matters.
-
-Get ready to write once in AsciiDoc and publish everywhere!
+Come discover how to get more out of your technical content by writing it in AsciiDoc and transforming it with Asciidoctor.
 // end:abstract[]
 --
 
 == View online
 
-http://mojavelinux.github.io/presentation-write-in-asciidoc-publish-everywhere[Slides]
+https://opendevise.github.io/presentation-documentation-as-code[Slides]
 &middot;
-https://github.com/mojavelinux/presentation-write-in-asciidoc-publish-everywhere/blob/master/src/notes/script.adoc[Script]
+https://github.com/opendevise/presentation-documentation-as-code/blob/master/src/notes/script.adoc[Script]
 
 == Build and view slides locally
 

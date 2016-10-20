@@ -1,4 +1,4 @@
-= Write in AsciiDoc, Publish Everywhere: Brainstorm
+= Documentation as Code: Brainstorm
 
 == Big Idea / Purpose
 

@@ -1,5 +1,5 @@
 {
-  "name": "presentation-write-in-asciidoc-publish-everywhere",
+  "name": "presentation-documentation-as-code",
   "version": "1.0.0",
   "devDependencies": {
     "bespoke": "^1.1.0",
