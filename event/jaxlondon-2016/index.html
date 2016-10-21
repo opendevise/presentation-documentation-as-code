@@ -1,0 +1,469 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Write in AsciiDoc, Publish Everywhere!</title><meta name="author" content="Dan Allen"><meta name="generator" content="Asciidoctor 1.5.5 (Bespoke.js converter)"><meta name="mobile-web-app-capable" content="yes"><link rel="stylesheet" href="build/build.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"></head><body><article class="deck"><section class="title" data-title=""><h1>Write in AsciiDoc, Publish Everywhere!</h1><aside role="note"><p>Welcome everyone!
+Today, we&#8217;re going to look at how you can write in AsciiDoc and publish everywhere.</p>
+<p>But, before we get there, I want to share with you my earliest memory of publishing and how it impacts my philosophy today.</p></aside><footer><p class="author"><span class="personname"><span class="firstname">Dan</span> <span class="surname">Allen</span></span><span class="affiliation"><span class="organization">OpenDevise</span></span><span class="contact"><span class="twitter">@mojavelinux</span> </span></p></footer></section>
+<section id="print-shop-box"><figure class="image contain"><img src="images/print-shop-home.jpg" alt="print shop home"></figure>
+<aside role="note"><p>When I was young, my parents got my siblings and I our first computer, an Apple II, along with a printer, the ImageWriter.
+One of our favorite programs to use was The Print Shop.</p></aside></section>
+<section><figure class="image contain"><img src="images/print-shop-select.jpg" alt="print shop select"></figure>
+<aside role="note"><p>Using this program, we could make signs, banners, or greeting cards using an assortment of block-style fonts, clip art, and patterned borders (and, to be sure, we made a lot).</p>
+<p>We&#8217;d then send the job off to the printer to transform our creation into something that existed in the real world.
+Naturally, the printing step of The Print Shop was the highlight.</p></aside></section>
+<section id="print-long-banner"><figure class="image contain"><img src="images/imagewriter-banner-long.jpg" alt="imagewriter banner long"></figure>
+<aside role="note"><p>Back then, printing was the only way to share what you had created; to make your statement.
+People didn&#8217;t have screens in their pockets.
+We adorned our doors and walls with these statements, our favorite being &#8220;Keep Out!&#8221; with a skull and crossbones.
+Happy Birthday was another popular phrase.
+These signs were our version of a web page.</p>
+<p>I remember thinking, &#8220;OMG, we can make it say anything we want! What do we want to say?&#8221;</p>
+<p>It was my first experience publishing content.
+And it felt amazing.
+That power of being able to write something and have it be transformed into something material.
+The power to express oneself.
+To inform.</p></aside></section>
+<section><figure class="image"><img src="images/imagewriter-color-ribbon-cartridge.jpg" alt="imagewriter color ribbon cartridge"></figure>
+<aside role="note"><p>I was particularly enthralled by the printing process.
+The printer had a ribbon cartridge, which would get dragged across the paper to leave its marks.
+When we sent it one of our creations, it would launch into a flurry of activity, seemingly in a panic to scribe our message onto the matrix.
+I often wondered if it knew what it was making as the message was gradually revealed as it emerged from the spool.</p></aside></section>
+<section><figure class="image contain"><img src="images/imagewriter-banner.jpg" alt="imagewriter banner"></figure>
+<aside role="note"><p>The speed, or rather lack thereof, was significant because it meant we had to choose our content&#8212;&#8203;our message&#8212;&#8203;wisely.
+Picture the young group of kids huddled around a screen barking out words, all vying to put a message out into the world.
+It was not only my first publishing experience, but also my first collaborative one.</p></aside></section>
+<section class="image" style="background-image: url(images/businessmen-pointing.svg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>Our technical content today has much to say and serves many masters, just as the content did in that childhood print shop.
+It&#8217;s essential that your content workflow be flexible enough to meet those demands.</p></aside></section>
+<section class="axis contrast"><ul><li><span class="primary">Content</span></li><li><span class="primary">Presentation</span></li></ul>
+<aside role="note"><p>I&#8217;m not the first&#8212;&#8203;and I won&#8217;t be the last&#8212;&#8203;to say that the best way to ensure this flexibility is to have a separation of content and presentation (and even the infrastructure that makes the presentation possible).
+That way, you&#8217;re able to meet the needs of the various stakeholders.
+But there&#8217;s a careful balance that must be achieved to avoid hindering creation, publication, and collaboration.
+It&#8217;s a balance that I believe AsciiDoc strikes.
+I&#8217;ll explain why in this talk.</p></aside></section>
+<section class="agenda"><ul class="build build-items"><li><span class="primary"><span class="icon"><i class="fa fa-paint-brush fa-fw"></i></span> Creation</span></li><li><span class="primary"><span class="icon"><i class="fa fa-send fa-fw"></i></span> Publication</span></li><li><span class="primary"><span class="icon"><i class="fa fa-code-fork fa-fw"></i></span> Collaboration</span></li></ul>
+<aside role="note"><p>I believe we should consider three key capabilities when evaluating the value proposition of a content system.</p>
+<ol><li><span class="primary">Creation</span></li><li><span class="primary">Publication</span></li><li><span class="primary">Collaboration</span></li></ol>
+<p>We&#8217;ll evaluate AsciiDoc through the lens of these three capabilities to investigate its strengths and learn/discover how to get the most out of them.</p></aside></section>
+<section class="topic"><h2>Creation</h2><p class="context"><span class="icon active"><i class="fa fa-paint-brush fa-fw"></i></span> <span class="icon"><i class="fa fa-send fa-fw"></i></span> <span class="icon"><i class="fa fa-code-fork fa-fw"></i></span></p>
+<aside role="note"><p>All other things aside, content is king.
+A content system that doesn&#8217;t consider the needs of the author first is not sustainable and thus doomed for failure.
+So the spotlight of this first section is on the writers in the room.
+This is for you.</p></aside></section>
+<section class="image" style="background-image: url(images/confined-bobcat.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>Before I get into AsciiDoc, I want to briefly peek a glimpse at DocBook and LaTeX so we have something to contrast against.</p>
+<p>Content systems often leave you feeling very confined.
+Perhaps some of you can atest to this.
+The struggle is real.</p></aside></section>
+<section class="subject"><h2>DocBook</h2><aside role="note"><p>DocBook is an XML schema that&#8217;s highly structured and semantic with a keen focus on separating content from presentation.</p>
+<p>Here&#8217;s how it looks:</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="xml" class="language-xml prettyprint"><span style="font-style: italic">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span style="font-style: italic">&lt;?asciidoc-toc?&gt;</span>
+<span style="font-style: italic">&lt;?asciidoc-numbered?&gt;</span>
+<span style="font-weight: bold">&lt;article</span> xmlns=<span style="font-style: italic">&quot;http://docbook.org/ns/docbook&quot;</span> xml:lang=<span style="font-style: italic">&quot;en&quot;</span>
+    xmlns:xl=<span style="font-style: italic">&quot;http://www.w3.org/1999/xlink&quot;</span> version=<span style="font-style: italic">&quot;5.0&quot;</span><span style="font-weight: bold">&gt;</span>
+  <span style="font-weight: bold">&lt;info&gt;</span>
+    <span style="font-weight: bold">&lt;title&gt;</span>Introduction to AsciiDoc<span style="font-weight: bold">&lt;/title&gt;</span>
+    <span style="font-weight: bold">&lt;date&gt;</span>2016-10-07<span style="font-weight: bold">&lt;/date&gt;</span>
+    <span style="font-weight: bold">&lt;author&gt;</span>
+      <span style="font-weight: bold">&lt;personname&gt;</span>
+        <span style="font-weight: bold">&lt;firstname&gt;</span>Author<span style="font-weight: bold">&lt;/firstname&gt;</span>
+        <span style="font-weight: bold">&lt;surname&gt;</span>Name<span style="font-weight: bold">&lt;/surname&gt;</span>
+      <span style="font-weight: bold">&lt;/personname&gt;</span>
+    <span style="font-weight: bold">&lt;/author&gt;</span>
+    <span style="font-weight: bold">&lt;authorinitials&gt;</span>AN<span style="font-weight: bold">&lt;/authorinitials&gt;</span>
+  <span style="font-weight: bold">&lt;/info&gt;</span>
+  <span style="font-weight: bold">&lt;abstract&gt;</span>
+    <span style="font-weight: bold">&lt;simpara&gt;</span>
+      The abstract<span style="font-weight: bold">&amp;#8212;&amp;#8203;</span>the façade of your article<span style="font-weight: bold">&amp;#8212;&amp;#8203;</span>goes here.
+    <span style="font-weight: bold">&lt;/simpara&gt;</span>
+  <span style="font-weight: bold">&lt;/abstract&gt;</span>
+  <span style="font-weight: bold">&lt;section</span> xml:id=<span style="font-style: italic">&quot;_introduction&quot;</span><span style="font-weight: bold">&gt;</span>
+    <span style="font-weight: bold">&lt;title&gt;</span>Introduction<span style="font-weight: bold">&lt;/title&gt;</span>
+    <span style="font-weight: bold">&lt;simpara&gt;</span>Here<span style="font-weight: bold">&amp;#8217;</span>s the text of your introduction.<span style="font-weight: bold">&lt;/simpara&gt;</span>
+...</code></pre></section>
+<section class="sheet"><pre class="source"><code data-lang="xml" class="language-xml prettyprint">...
+    <span style="font-weight: bold">&lt;informalequation</span> xml:id=<span style="font-style: italic">&quot;simple_equation&quot;</span><span style="font-weight: bold">&gt;</span>
+      <span style="font-weight: bold">&lt;alt&gt;</span><span style="font-style: italic">&lt;![CDATA[\alpha = \sqrt{ \beta }]]&gt;</span><span style="font-weight: bold">&lt;/alt&gt;</span>
+      <span style="font-weight: bold">&lt;mathphrase&gt;</span><span style="font-style: italic">&lt;![CDATA[\alpha = \sqrt{ \beta }]]&gt;</span><span style="font-weight: bold">&lt;/mathphrase&gt;</span>
+    <span style="font-weight: bold">&lt;/informalequation&gt;</span>
+    <span style="font-weight: bold">&lt;section</span> xml:id=<span style="font-style: italic">&quot;_subsection_heading_here&quot;</span><span style="font-weight: bold">&gt;</span>
+      <span style="font-weight: bold">&lt;title&gt;</span>Subsection Heading<span style="font-weight: bold">&lt;/title&gt;</span>
+      <span style="font-weight: bold">&lt;simpara&gt;</span>Write your subsection text here.<span style="font-weight: bold">&lt;/simpara&gt;</span>
+      <span style="font-weight: bold">&lt;figure</span> xml:id=<span style="font-style: italic">&quot;simulation_figure&quot;</span><span style="font-weight: bold">&gt;</span>
+        <span style="font-weight: bold">&lt;title&gt;</span>Simulation Results<span style="font-weight: bold">&lt;/title&gt;</span>
+        <span style="font-weight: bold">&lt;mediaobject&gt;</span>
+          <span style="font-weight: bold">&lt;imageobject&gt;</span>
+            <span style="font-weight: bold">&lt;imagedata</span> fileref=<span style="font-style: italic">&quot;images/figure.png&quot;</span><span style="font-weight: bold">/&gt;</span>
+          <span style="font-weight: bold">&lt;/imageobject&gt;</span>
+          <span style="font-weight: bold">&lt;textobject&gt;&lt;phrase&gt;</span>figure<span style="font-weight: bold">&lt;/phrase&gt;&lt;/textobject&gt;</span>
+        <span style="font-weight: bold">&lt;/mediaobject&gt;</span>
+      <span style="font-weight: bold">&lt;/figure&gt;</span>
+    <span style="font-weight: bold">&lt;/section&gt;</span>
+  <span style="font-weight: bold">&lt;/section&gt;</span>
+  <span style="font-weight: bold">&lt;section</span> xml:id=<span style="font-style: italic">&quot;_conclusion&quot;</span><span style="font-weight: bold">&gt;</span>
+    <span style="font-weight: bold">&lt;title&gt;</span>Conclusion<span style="font-weight: bold">&lt;/title&gt;</span>
+    <span style="font-weight: bold">&lt;simpara&gt;</span>Write your conclusion here.<span style="font-weight: bold">&lt;/simpara&gt;</span>
+  <span style="font-weight: bold">&lt;/section&gt;</span>
+<span style="font-weight: bold">&lt;/article&gt;</span></code></pre></section>
+<section class="image" style="background-image: url(images/stunned-owl.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>O_o</p>
+<p>This was clearly made by an engineer while the writer was out.
+It screams, &#8220;I don&#8217;t care about your needs. I just need you to satisfy mine.&#8221;</p></aside></section>
+<section class="image" style="background-image: url(images/stuck-swan.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>Writers often get a sense that their content is locked up in this structure, and sense the burden of having to remember all the tags and when to use them.
+It&#8217;s necessary to supplement every piece of content with an enclosure of markup since nothing is implied
+The ironic part is that the engineer didn&#8217;t do herself much of a service either.
+XML tools&#8212;&#8203;especially the ones in this toolchain like XSLT&#8212;&#8203;are a pain to work with.</p>
+<p>Nobody wins here.</p></aside></section>
+<section class="subject"><h2>LaTeX</h2><aside role="note"><p>Moving on, let&#8217;s look at LaTeX.</p>
+<p>Here&#8217;s how that looks:</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="tex" class="language-tex prettyprint"><span style="font-weight: bold">\documentclass</span>{article}
+<span style="font-weight: bold">\usepackage</span>[utf8]{inputenc}
+<span style="font-weight: bold">\usepackage</span>{graphicx}
+<span style="font-weight: bold">\begin</span>{document}
+<span style="font-weight: bold">\title</span>{Introduction to <span style="font-weight: bold">\LaTeX</span>{}}
+<span style="font-weight: bold">\author</span>{Author Name}
+<span style="font-weight: bold">\maketitle</span>
+<span style="font-weight: bold">\tableofcontents</span>
+<span style="font-weight: bold">\begin</span>{abstract}
+The abstract---the façade of your article---goes here.
+<span style="font-weight: bold">\end</span>{abstract}
+<span style="font-weight: bold">\section</span>{Introduction}
+Here&#39;s the text of your introduction.
+<span style="font-weight: bold">\begin</span>{equation}
+  <span style="font-weight: bold">\label</span>{simple_equation}
+  <span style="font-weight: bold">\alpha</span> = <span style="font-weight: bold">\sqrt</span>{ <span style="font-weight: bold">\beta</span> }
+<span style="font-weight: bold">\end</span>{equation}
+<span style="font-weight: bold">\subsection</span>{Subsection Heading}
+Write your subsection text here.
+<span style="font-weight: bold">\begin</span>{figure}
+  <span style="font-weight: bold">\centering</span>
+  <span style="font-weight: bold">\includegraphics</span>[width=3.0in]{images/figure}
+  <span style="font-weight: bold">\caption</span>{Simulation Results}
+  <span style="font-weight: bold">\label</span>{simulation_figure}
+<span style="font-weight: bold">\end</span>{figure}
+<span style="font-weight: bold">\section</span>{Conclusion}
+Write your conclusion here.
+<span style="font-weight: bold">\end</span>{document}</code></pre></section>
+<section class="image" style="background-image: url(images/skeptical-squirrel.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>O_o</p>
+<p>This was clearly made by yet another engineer while the writer was away.
+It screams, &#8220;I don&#8217;t see the difference between content and presentation/layout, so I&#8217;ll just mix all the concerns together.&#8221;</p></aside></section>
+<section class="image" style="background-image: url(images/bowerbird-nest.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>Writers get lost not only because the content is locked up in this bird nest, but now there&#8217;s a deluge of dialects that no mere mortal can possibly remember; like a mud flow washing over their content.
+It&#8217;s hard to imagine something less welcoming.</p></aside></section>
+<section><h2>Got <span class="icon"><i class="fa fa-file-pdf-o fa-fw"></i></span>?</h2><aside role="note"><p>The other major problem is that LaTeX was not designed with multi-channel web publishing in mind.
+Got PDF?
+I could go on, but the point is, many content systems cater more (even exclusively) to the technologist rather than the writer.</p></aside></section>
+<section class="subject"><h2>AsciiDoc</h2><aside role="note"><p>Let&#8217;s get that writer back in here and make her the dignitary.</p>
+<p>After getting to know her needs, we create something called AsciiDoc.
+Here&#8217;s the markup we present her:</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="asciidoc" class="language-asciidoc prettyprint">= Introduction to AsciiDoc
+Author Name
+:imagesdir: images
+:sectnums:
+:toc:
+
+[abstract]
+The abstract--the façade of your article--goes here.
+
+== Introduction
+
+Here&#39;s the text of your introduction.
+
+[stem#simple_equation]
+++++
+\alpha = \sqrt{ \beta }
+++++
+
+=== Subsection Heading
+
+Write your subsection text here.
+
+image::figure.png[id=simulation_figure,title=&quot;Simulation Results&quot;]
+
+== Conclusion
+
+Write your conclusion here.</code></pre></section>
+<section class="image" style="background-image: url(images/hungry-fox.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>\o/</p>
+<p>Yummy.</p>
+<p>Somewhere in the distance you hear the writer sing, &#8220;I can see clearly now, the tags are gone.&#8221;</p></aside></section>
+<section><ul class="build build-items spotlight"><li><span class="primary">clear &amp; concise</span></li><li><span class="primary">paragraphs are paragraphs</span></li><li><span class="primary">familiar conventions</span></li><li><span class="primary">common terminology</span></li><li><span class="primary">forgiving syntax</span></li><li><span class="primary">consistent, repeatable patterns</span></li><li><span class="primary">semantic</span></li></ul>
+<aside role="note"><p>The first thing you&#8217;ll notice is that the syntax is clear &amp; concise.
+What you see is predominently content.
+It&#8217;s readable in raw form, unlike other formats we&#8217;ve seen.</p>
+<figure class="quote"><blockquote><p>Perfection is achieved not when there&#8217;s nothing more to add, but when there&#8217;s nothing left to take away.</p></blockquote><figcaption>Antoine de Saint-Exubéry</figcaption></figure>
+<p>Paragraphs are just paragraphs, no bullshit.</p>
+<p>The remaining marks are based on familiar conventions, such as asterisks to itemize a list or equal signs to designate section titles.</p>
+<p>Words that appear in the syntax are selected from common terminology like &#8220;source&#8221; and &#8220;image&#8221;.</p>
+<p>In general, the syntax is remarkably forgiving (unlike DocBook, which is extremely picky), making it less daunting.</p>
+<p>If you dig a bit deeper, you&#8217;ll notice there&#8217;s a consistency to the syntax.
+Indeed, the language is based on repeatable patterns (and is extended by following those same patterns, which we&#8217;ll get into later).</p>
+<p>Finally, the syntax is extremely semantic.
+Each bit of content belongs to a node, a content block or phrase.
+These &#8220;nodes&#8221; can be annotated with extra bits of information that states what the content is, how it might be presented, and other properties.</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="asciidoc" class="language-asciidoc prettyprint">[.path]#gradle/wrapper/gradle-wrapper.properties#
+
+[.topic]
+== Service Workers
+
+[.cue]
+****
+Don&#39;t forget to say these words.
+****</code></pre>
+<aside role="note"><p>The most versatile semantic information is the role.</p>
+<p><em>(role examples)</em></p>
+<p>The ability to add metadata to the content not only encourages the separation of content and presentation, it also informs transformation, which we&#8217;ll get into next.</p></aside></section>
+<section><figure class="image"><img src="images/align-left.svg" alt="align left" width="250"></figure>
+<aside role="note"><p>One reason the syntax is simple and consistent is because it&#8217;s both line-oriented and left-aligned.</p>
+<p>The line-oriented aspect is the best use of the medium.
+A lot can be infered by placing content on different lines.
+We do the same thing when writing code.
+Each statement gets is own line, so there&#8217;s no need for a trailing semicolon.</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="asciidoc" class="language-asciidoc prettyprint">.Sidebar Title
+====
+First paragraph in the sidebar.
+
+Another paragraph in the sidebar.
+====</code></pre>
+<aside role="note"><p>Take delimited blocks for instance.
+You add these &#8220;fences&#8221; around the content.
+AsciiDoc can then assume everything between those lines is content for that block.</p>
+<p>Having a syntax that is aligned to the left margin helps keeps the writer rooted.
+You needn&#8217;t worry how many spaces are needed and content doesn&#8217;t float out into the ether.
+You rely on the line-oriented fences to encompass the content instead.</p></aside></section>
+<section><h2>No WYSIWYG?</h2><aside role="note"><p>What&#8217;s absent?</p>
+<p>WYSIWYG.</p>
+<p>Why?</p></aside></section>
+<section><h2><strong>Y</strong>ou <strong>G</strong>et <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et</h2><div class="build build-items"><h2 class="discrete"><code>¯\_(ツ)_/¯</code></h2></div>
+<aside role="note"><p>You don&#8217;t need it.</p>
+<p>AsciiDoc is readable in raw form.
+And you know what&#8217;s there.</p>
+<p>With WYSIWYG, you get what you get.
+It takes away control and puts a barrier between you and your content.</p>
+<p>But that doesn&#8217;t mean there are no tools.
+There certainly are.</p></aside></section>
+<section><h2>IDE for Writers</h2><aside role="note"><p>In fact, I continue to advocate for the development of an IDE for writers.</p>
+<p>For instance, if you feel like you need to preview in real time, as many authors do, that&#8217;s still possible.
+Nothing is lost, but a lot of control is preserved.</p></aside></section>
+<section><figure class="image contain"><img src="images/ss-atom-asciidoc-preview.png" alt="ss atom asciidoc preview"><figcaption>Atom</figcaption></figure>
+<aside role="note"><p>Discuss authoring in Atom with the AsciiDoc add-on to get helpful syntax highlighting.
+Also mention AsciidocFX and IntelliJ IDEA.</p></aside></section>
+<section><header><h2>Creation</h2><h3>Recommended Practices</h3></header><aside role="note"><p>If I were to list all the details of AsciiDoc, it&#8217;d be overwhelming.
+For sure, there&#8217;s a lot in there.
+What you find is that shops tend to standardize on a cross section of it.
+Dialects bring additional consistency to the language and reinfoce the impression of simplicity.
+I also recommend setting up templates for common document types, one to ensure consistency, but also to allow the writer to jump right into the writing phase.
+Another way to simplify creation is to partition the content.
+After awhile, having all the information in one document becomes unwieldy.
+You might want to split up a book by chapters, including common or shared content, or extract code samples so they don&#8217;t get mixed up in content.
+AsciiDoc supports all that through it&#8217;s include mechanism.
+It even goes so far as to allow you to include fragments of another document (by line number or tagged region).
+One way this feature is used is to make testable documentation.
+Code snippets can be pulled in from a test suite, where the code can be tested in isolation.
+It&#8217;s also just nice to get all your code samples out of the writer&#8217;s hair.
+Since includes can span repository boundaries and even be fetched from a URL, you can achieve a &#8220;single source of truth&#8221; (instead of copy/paste)
+AsciiDoc&#8217;s attributes are another way to inject dynamic or reusable content into the document.
+Of course, once you start dividing up your document, you&#8217;ll want to be able to create references between them.
+AsciiDoc supports both internal and inter-document references, and there are ways to extend this capability.</p></aside></section>
+<section><h2>Migration</h2><aside role="note"><p>So you might be thinking, all this is great, but I have existing content.
+How do I get it into AsciiDoc?
+We&#8217;ll, conversion to AsciiDoc is relatively easy.
+Many groups have done it and a number of tools are available to help.
+The reason it&#8217;s relatively easy stems from the simplicity of the language itself.
+One such tool is DocBookRx, which converts form DocBook to AsciiDoc.
+(PSA about pandoc).
+As a word of warning, if you do migrate to AsciiDoc, make sure you leave yourself enough time to make it a clean as possible before you let the writers loose on it.
+It&#8217;s much easier (and less expensive) to fix cross-cutting problems at the beginning rather than while everything is changing.</p></aside></section>
+<section class="image" style="background-image: url(images/breaking-dawn-longs-peak.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"><p>So far we&#8217;ve just talked about the source, the domain of the writer.
+Now that you have your content in AsciiDoc, what can you do with it?
+This is where the engineer comes in.</p>
+<p>The AsciiDoc syntax is so simple and elegant, it&#8217;s easy to be deceived that it can only produce primitive output.
+You couldn&#8217;t be more mistaken.
+The AsciiDoc content is just the raw material, its semantics the seeds of the blossoms that we&#8217;ll produce.
+Let&#8217;s shed some light on how we can transform it and where we can publish it.</p>
+<p>It&#8217;s the dawn of endless possiblities, just like The Print Shop was for us.</p></aside></section>
+<section class="topic"><h2>Publication</h2><p class="context"><span class="icon"><i class="fa fa-paint-brush fa-fw"></i></span> <span class="icon active"><i class="fa fa-send fa-fw"></i></span> <span class="icon"><i class="fa fa-code-fork fa-fw"></i></span></p>
+<aside role="note"><p>The focus of this section is the AsciiDoc processor &amp; publisher, Asciidoctor.
+Engineers, wake up, this is for you.</p></aside></section>
+<section class="axis"><ul><li><span class="primary"><span class="icon"><i class="fa fa-file-text"></i></span> AsciiDoc</span><ul><li><span class="primary">syntax</span></li></ul></li><li><span class="primary"><span class="icon"><i class="fa fa-wrench"></i></span> Asciidoctor</span><ul><li><span class="primary">parser + tools</span></li></ul></li></ul>
+<aside role="note"><p>AsciiDoc is the language.<br>
+Asciidoctor is the processor.</p></aside></section>
+<section class="axis contrast"><ul><li><span class="primary">AsciiDoc</span></li><li><span class="primary">Presentation Formats</span><ul class="build build-items"><li><span class="primary">HTML</span></li><li><span class="primary">DocBook</span></li><li><span class="primary">PDF</span></li><li><span class="primary">EPUB3</span></li><li><span class="primary">Slides</span></li><li><span class="primary"><span class="icon"><i class="fa fa-question-circle fa-fw"></i></span></span></li></ul></li></ul>
+<aside role="note"><p>I want to start by mentioning that, out of the box, Asciidoctor can convert to HTML and DocBook, allowing you to preview and export the content, respectively.
+This is just the default interpretation of the AsciiDoc source.
+There&#8217;s nothing stopping you from interpreting the source in a different way.
+That&#8217;s what separation of content and presentation affords you.
+Every bit of output that gets generated can be customized in one way or another.
+You should look at the AsciiDoc source as a source of record, not a textual representation of the output.</p></aside></section>
+<section class="sheet"><pre class="source"><code data-lang="asciidoc" class="language-asciidoc prettyprint">[tabs]
+======
+.Visual Editor
+[tab]
+=====
+Describe how to use the visual editor and show some screenshots.
+=====
+
+.XML Editor
+[tab]
+=====
+Describe how to do the same thing in the XML editor.
+=====
+======</code></pre>
+<aside role="note"><p>I&#8217;ll cite a few examples to get you thinking about what is possible.</p>
+<ul><li><span class="primary">tabs</span></li><li><span class="primary">background image for slide</span></li><li><span class="primary">import PDF page</span></li><li><span class="primary">slide notes</span></li></ul></aside></section>
+<section><h2>AST <span class="icon"><i class="fa fa-random fa-fw"></i></span></h2><aside role="note"><p>What we&#8217;re talking about here is transformation.
+Transformation is the key to being able to publish to multiple channels in a variety of formats.</p>
+<p>When Asciidoctor reads the file, it builds an AST, or abstract syntax tree.
+That tree is passed to a converter, which than transforms it into the target format, such as HTML.</p>
+<p>One way to extend Asciidoctor is to write a custom converter, or build on one that already exists.
+The only limit to what output formats you can produce is what you&#8217;re willing/able to create.</p>
+<p>But even before the tree is sent to the converter, you have a chance to manipulate it or mine it for information.
+In fact, you don&#8217;t even need to output anything.
+You can just use the AST to query the document for information in a contextual way (unlike grep, which is crude and blind to context)</p>
+<p>You can even go one step further and tap into the parser itself.
+Asciidoctor provides an extension API to allow you to add additional elements to the syntax, such as a custom block or macro.
+This stuff literally makes me giddy.</p></aside></section>
+<section><pre class="source"><code data-lang="asciidoc" class="language-asciidoc prettyprint">lorem::sentences[5]</code></pre></section>
+<section><pre class="source"><code data-lang="ruby" class="language-ruby prettyprint">Asciidoctor::Extensions.register <span style="font-weight: bold">do</span>
+  block_macro <span style="font-style: italic">:lorem</span> <span style="font-weight: bold">do</span>
+    name_positional_attributes <span style="font-style: italic">&#39;size&#39;</span>
+    process <span style="font-weight: bold">do</span> |parent, target, attrs|
+      lorem = Middleman::Extensions::Lorem::LoremObject
+      method = target.to_sym
+      <span style="font-weight: bold">if</span> lorem.respond_to? method
+        content = lorem.send(method, attrs.fetch(<span style="font-style: italic">&#39;length&#39;</span>, 1).to_i.abs)
+        create_paragraph parent, content, {}
+      <span style="font-weight: bold">else</span>
+        warn <span style="font-style: italic">&#39;Unknown lorem target for lorem block macro&#39;</span>
+        <span style="font-weight: bold">nil</span>
+      <span style="font-weight: bold">end</span>
+    <span style="font-weight: bold">end</span>
+  <span style="font-weight: bold">end</span>
+<span style="font-weight: bold">end</span></code></pre></section>
+<section><pre class="screen"><samp>  Scribed     Generated
+        \     /
+          \ /
+           v
+        AsciiDoc
+           |
+           v
+       Converter
+           |
+           v
+   Presentation Format</samp></pre>
+<aside role="note"><p>As you can see, you have a lot of control over how the AsciiDoc is interpretted.
+Be careful not to fall into the trap of thinking that one input document produces one output document.
+You could take one input document that represents a book and produce multiple pages of HTML.
+You can also go the other way.
+You could use the processor, or a toolchain that wraps it, that takes input from several sources and weaves them together.
+Where we see this technique used is in API documentation tools like Spring REST Docs and swagger2markup, which generate AsciiDoc to document the API methods, then combine it with content written by the author and produces a document (or documents) to be published.
+Part generated, part scribed.
+The toolchain plays the role of orchestrator, weaving together disparate content sources.</p></aside></section>
+<section><figure class="quote"><blockquote><p>I can do truly amazing things with my AsciiDoc source.</p></blockquote><figcaption>Scott Chacon <cite>author of Pro Git</cite></figcaption></figure>
+<aside role="note"><p>There truly are endless possibilities for your content once in this format and managed by this toolchain.
+This transformation capability also keeps you from being tied down.
+Just as you can generate formats for publishing, you can generate to another source format, even AsciiDoc.
+If you store the source in a version control system, which we&#8217;ll talk more about in the next section, the publication tool can even tap into the document history and inject content such as an audit log or make different versions of the document available.
+This is another powerful way to keep your content DRY and free from doing tasks for information that can be implied.</p></aside></section>
+<section><h2>&#8220;Push to Publish&#8221;</h2><aside role="note"><p>Last but not least, publication should be fully managed by an automated build.
+It doesn&#8217;t end with Asciidoctor.
+The build should not only handle converting the content and publishing it to the various channels, but should describe and manage the infrastructure as well.
+Treat your docs just like you would any other application.
+It should be possible to &#8220;push to publish&#8221; and the computer takes over from there.
+These automated builds also aid with collaboration, which we&#8217;ll get into next.</p></aside></section>
+<section class="image" style="background-image: url(images/mountains-everywhere.jpg); background-size: cover; background-repeat: no-repeat">
+<aside role="note"></aside></section>
+<section><header><h2>Publication</h2><h3>Recommended Practices</h3></header><aside role="note"></aside></section>
+<section class="topic"><h2>Collaboration</h2><p class="context"><span class="icon"><i class="fa fa-paint-brush fa-fw"></i></span> <span class="icon"><i class="fa fa-send fa-fw"></i></span> <span class="icon active"><i class="fa fa-code-fork fa-fw"></i></span></p>
+<aside role="note"><p>What you&#8217;ll find is that AsciiDoc lends itself very well to collaboration because much of the tools we need are already in place.
+While there&#8217;s a bit more assembly required up front, what you&#8217;ll likely find is that it blows any proprietary, closed system out of the water.</p>
+<p>This section addresses both the writers and the engineers, and anyone else involved in the content effort.
+No doubt what makes AsciiDoc ripe for collaboration above all else is that it is version-control friendly.
+AsciiDoc doesn&#8217;t have &#8220;source control support,&#8221; rather it just lends itself to being source controlled.
+No binary blobs, just plain text.
+And version-control systems love plain text.
+You get history, source diffs, rich diffs, branching, merging, etc., all which can be managed with interfaces like GitHub and GitLab.</p></aside></section>
+<section><figure class="quote"><blockquote><p>The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed&#8212;&#8203;from several a year to several a week. &#8230;&#8203;</p></blockquote></figure>
+<aside role="note"><p>And this is a real force for contribution, as the JBoss BxMS and OpenShit teams have both observed:</p>
+<figure class="quote"><blockquote><p>The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed&#8212;&#8203;from several a year to several a week. &#8230;&#8203;</p>
+<p>&#8230;&#8203; Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
+Preliminary results hint that this is an observable trend.</p></blockquote><figcaption>JBoss BxMS Engineering Team</figcaption></figure></aside></section>
+<section><figure class="quote"><blockquote><p>&#8230;&#8203; Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
+Preliminary results hint that this is an observable trend.</p></blockquote><figcaption>JBoss BxMS Engineering Team</figcaption></figure>
+<aside role="note"><p>And this is a real force for contribution, as the JBoss BxMS and OpenShit teams have both observed:</p>
+<figure class="quote"><blockquote><p>The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed&#8212;&#8203;from several a year to several a week. &#8230;&#8203;</p>
+<p>&#8230;&#8203; Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
+Preliminary results hint that this is an observable trend.</p></blockquote><figcaption>JBoss BxMS Engineering Team</figcaption></figure></aside></section>
+<section class="image" style="background-image: url(images/confident-badger.jpg); background-size: cover; background-repeat: no-repeat"></section>
+<section><h2><span class="icon"><i class="fa fa-github"></i></span> <span class="underline">Edit on GitHub</span></h2><aside role="note"><p>Nothing drives that more, invites participation more, than the &#8220;Edit on GitHub&#8221; link.</p>
+<p>But the team does need to understand how the &#8220;Edit on GitHub&#8221; process actually works and know how to manage the git workflow.
+I do strongly recommend investing in git training for your team.
+Knowing how to use git correctly will save time and toes.</p></aside></section>
+<section><h2>AsciiDoc <span class="icon"><i class="fa fa-github"></i></span> GitHub</h2><aside role="note"><p>It&#8217;s impossible to overstate the significance of GitHub (and, increasingly, GitLab).
+These interfaces have proven to be incredibly approachable and encourage contribution.
+You can benefit from that phenomenon by moving your documentation there.</p></aside></section>
+<section><h2>Docs = Code</h2><aside role="note"><p>All this leads to a strong-held belief of ours.
+Docs = Code
+Why is that interesting?
+Well, we have a long history in this industry of collaborating on code.
+If we view docs as just another form of code, we can benefit from all of its processes, pratices, techniques, and tools.</p></aside></section>
+<section><figure class="image contain"><img src="images/ss-git-changes.png" alt="ss git changes"></figure>
+<aside role="note"><p>One of the first tools that comes to mind is code review.
+Countless CMS tools have tried to manufacture a content review workflow.
+Well, we have one right here, (built on an accepted industry practice), supported by incredible code review tools like Gerrit, GitHub, GitLab, and so forth.</p>
+<p>This system is also advantageous to the manager.
+It makes it easy for managers to moniter the workflow, such as to determine what changed or what work was done, simply by looking at the git history or activity charts on GitHub and GitLab.</p></aside></section>
+<section><figure class="image contain"><img src="images/ss-source-diff.png" alt="ss source diff"></figure></section>
+<section><figure class="image contain"><img src="images/ss-rich-diff.png" alt="ss rich diff"></figure></section>
+<section><figure class="image contain"><img src="images/ss-code-review.png" alt="ss code review"></figure></section>
+<section><header><h2>Collaboration</h2><h3>Recommended Practices</h3></header><aside role="note"><p>Although AsciiDoc is naturally friendly to version-control systems, there are ways to organize the content that let you get even more out of it.
+For instance, I highly recommend writing with a sentence-per-line style.
+By doing so, you isolate changes to the line of content that they affect, much like changing a line of code.
+If you use fixed-column hard-wrapping, the change at the beginning of a paragraph can have a cascading effect, possibly interfering with unrelated lines that someone else is modifying.
+In general, you want to look for ways that allow you to work in different parts of a file without causing conflicts.
+Isolate your changes.</p>
+<p>Another way to avoid such conflicts is to use well-factored, modular content.
+You want a consistent, intuitive, and discoverable structure.
+Consider using the topic-based authoring method so the content can be stored separately from the files that aggregate it.
+As mentioned before, import non-content such as code snippets from the original source file (possibly even in a separate repository) so that it can be managed independently and doesn&#8217;t fall out of date.</p>
+<p>It&#8217;s best to have a style guide: for syntax; for structure; for patterns; for voice.
+Automate the human process.
+This reduces the amount of thought, avoids errors, and drastically cuts down on expensive micro-migrations to fix mistakes.
+Again, the document templates mentioned earlier benefit collaboration as well.</p>
+<p>Validation tools are also important because they help ensure quality and consistency.
+You can tap into the Asciidoctor process to perform validations in addition to the ones that come out of the box.</p>
+<p>Don&#8217;t fall into the trap of putting all your content in a single repository.
+Instead, organize your repositories by software product or logical product group.
+We can refer to this repository as a &#8220;content container.&#8221; (a contrast to a &#8220;library layout&#8221; where there&#8217;s one directory per book)
+You can then assume that all the content in a single repository is versioned together.
+If different documents have different versioning schemes, or move at different rates, that&#8217;s an indicator you should move them to separate repositories.
+Also avoid creating monolithic documents.
+In particular, beware of the Russian Doll Effect (contributing guide inside developer guide inside of README).
+It&#8217;s easy to create a script that brings them all back together.</p>
+<p>The reason this partitioning is important is because it enables you to leverage branches properly.
+Have a branch for each major release line.
+Different major (and maybe even minor) versions of the document should be stored in separate branches.
+Don&#8217;t use different directories to store the versions, as I&#8217;ve seen some teams do.
+You lose a lot of capabilities of the version control system by not using branches because the commands for those systems don&#8217;t understand how to compare documents that way.
+It&#8217;s also much harder to search for content.</p>
+<p>Take a look at AsciiBinder for an example of a build system that builds out versions of the documentation from the branches.
+Regardless of what structure you choose, anyone should be able to build the output through a simple interface, without having to remember complex commands.
+That&#8217;s why it&#8217;s important to have an automated build, which obviously benefits publication as discussed earlier.</p></aside></section>
+<section class="agenda recap"><ul><li><span class="primary"><span class="icon"><i class="fa fa-paint-brush fa-fw"></i></span> Creation</span></li><li><span class="primary"><span class="icon"><i class="fa fa-send fa-fw"></i></span> Publication</span></li><li><span class="primary"><span class="icon"><i class="fa fa-code-fork fa-fw"></i></span> Collaboration</span></li></ul>
+<aside role="note"><p>In this talk, we evaluated AsciiDoc through the lens of three capabilities: creation; publication; and collaboration.</p>
+<p>In any content system, the writer must be the focus, first and foremost.
+Otherwise, the system is destined for failure.
+It&#8217;s vital to protect the sanctity of writing.
+But the engineer must be empowered as well to transform that content.
+Content that&#8217;s locked away cannot serve its function, cannot reach its users across channels.</p>
+<p>Like the technology that it documents, technical writing benefits from many eyes and minds.
+Anything inherently complex does.
+So the system must be friendly to collaboration.
+It&#8217;s the key to getting contributions as well.</p>
+<p>As we&#8217;ve seen, the Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, converters, and tools, strikes this balance.
+These capabilities happen to be the three pillars of the Asciidoctor project, so we expect the story to only get better.</p>
+<p>Thank you!</p></aside></section>
+<section class="overlay image" style="background-image: url(images/mountains-everywhere.jpg); background-size: cover; background-repeat: no-repeat"><h2>Write in AsciiDoc, Publish Everywhere!</h2>
+<aside role="note"><p>Thank you!</p></aside></section>
+<section><h2>Image Credits</h2><ul><li><span class="primary">Businessmen Illustrations - <a href="http://www.123rf.com/profile_jjesadaphorn" class="bare">http://www.123rf.com/profile_jjesadaphorn</a></span></li><li><span class="primary">Bobcat - <a href="https://www.instagram.com/p/BI060cwgk6g">Steve Gifford via @usfws on Instagram</a></span></li><li><span class="primary">Great Horned Owl - <a href="https://www.youtube.com/watch?v=PyNYj7TAASE">JCMDI.com</a></span></li><li><span class="primary">Douglas Squirrel - <a href="https://www.instagram.com/p/BK37s9mAxGv">Mick Thompson via @usfws on Instagram</a></span></li><li><span class="primary">Bowerbird Nest - <a href="https://www.flickr.com/photos/27578366@N06/3063476368">Barry Hatton on Flickr</a></span></li><li><span class="primary">Red Fox - <a href="https://www.instagram.com/p/BLEzNivArjW">Steve Gifford via @usfws on Instagram</a></span></li><li><span class="primary">Longs Peak Above Bear Lake - <a href="https://www.instagram.com/p/BCrAEqXKJ7O">@hanemannphoto on Instagram</a></span></li><li><span class="primary">The Loch - <a href="https://www.instagram.com/p/BKzK0DJj6Aa">@bluemountainbel on Instagram</a></span></li><li><span class="primary">American Badger - <a href="https://www.instagram.com/p/BGm2kpNRuXS">@usfws on Instagram</a></span></li></ul></section></article><script src="build/build.js"></script></body></html>
