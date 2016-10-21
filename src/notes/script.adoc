@@ -7,7 +7,7 @@ Today, we're going to look at how you can write in AsciiDoc and publish everywhe
 But, before we get there, I want to share with you my earliest memory of publishing and how it impacts my philosophy today.
 // end::title[]
 
-== The Print Shop Story
+== Personal Story
 
 // tag::print-shop-box[]
 When I was young, my parents got my siblings and I our first computer, an Apple II, along with a printer, the ImageWriter.
