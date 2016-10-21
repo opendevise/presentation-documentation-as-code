@@ -1,5 +1,6 @@
 = Write in AsciiDoc, Publish Everywhere!
 Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
+:branch: jaxlondon-2016
 
 [abstract]
 --
@@ -20,9 +21,9 @@ Get ready to write once in AsciiDoc and publish everywhere!
 
 == View online
 
-https://opendevise.github.io/presentation-documentation-as-code[Slides]
+https://opendevise.github.io/presentation-documentation-as-code/@{branch}[Slides]
 &middot;
-https://github.com/opendevise/presentation-documentation-as-code/blob/jaxlondon-2016/src/notes/script.adoc[Script]
+https://github.com/opendevise/presentation-documentation-as-code/blob/{branch}/src/notes/script.adoc[Script]
 
 == Build and view slides locally
 
