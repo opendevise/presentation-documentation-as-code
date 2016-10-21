@@ -1,7 +1,7 @@
 = Documentation as Code: Balancing Writing & Delivery with Asciidoctor
 Dan Allen
 //Dan Allen <http://opendevise.io[@mojavelinux]>
-:organization: Open Devise
+:organization: OpenDevise
 :twitter: @mojavelinux
 :!sectids:
 :icons: font
