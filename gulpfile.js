@@ -108,7 +108,7 @@ gulp.task('watch', function() {
   gulp.watch('src/fonts/*', ['fonts']);
 });
 
-gulp.task('branch-dist', ['build'], function() {
+gulp.task('build-branch', ['build'], function() {
   var branch = git.branch();
   if (branch != 'master') {
     return gulp.src('dist/**/*')
@@ -116,14 +116,15 @@ gulp.task('branch-dist', ['build'], function() {
   }
 });
 
-gulp.task('publish', ['clean', 'build', 'branch-dist'], function(done) {
+gulp.task('publish', ['clean', 'build-branch'], function(done) {
   var branch = git.branch();
   var opts = { logger: gutil.log }
   if (branch != 'master') {
     opts.src = (opts.only = '@' + branch) + '/**/*';
   }
   else {
-    opts.only = ['.', ':!@*']
+    // only is a list of globby expressions (not git pathspecs)
+    opts.only = ['*', '!@*']
   }
   ghpages.publish(path.join(__dirname, 'dist'), opts, done);
 });
