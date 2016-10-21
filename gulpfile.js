@@ -9,6 +9,7 @@ var pkg = require('./package.json'),
   del = require('del'),
   exec = require('gulp-exec'),
   ghpages = require('gh-pages'),
+  git = require('git-rev-sync'),
   gulp = require('gulp'),
   gutil = require('gulp-util'),
   path = require('path'),
@@ -107,8 +108,24 @@ gulp.task('watch', function() {
   gulp.watch('src/fonts/*', ['fonts']);
 });
 
-gulp.task('publish', ['clean', 'build'], function(done) {
-  ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
+gulp.task('branch-dist', ['build'], function() {
+  var branch = git.branch();
+  if (branch != 'master') {
+    return gulp.src('dist/**/*')
+      .pipe(gulp.dest('dist/@' + branch));
+  }
+});
+
+gulp.task('publish', ['clean', 'build', 'branch-dist'], function(done) {
+  var branch = git.branch();
+  var opts = { logger: gutil.log }
+  if (branch != 'master') {
+    opts.src = (opts.only = '@' + branch) + '/**/*';
+  }
+  else {
+    opts.only = ['.', ':!@*']
+  }
+  ghpages.publish(path.join(__dirname, 'dist'), opts, done);
 });
 
 // old alias for publishing on gh-pages
