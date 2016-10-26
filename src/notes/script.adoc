@@ -2,52 +2,53 @@
 
 // tag::title[]
 Welcome everyone!
-Today, we're going to look at how you can write in AsciiDoc and publish everywhere.
+Today, we're going to look at how you can balance the process of writing and delivering content by managing documentation as code authored in AsciiDoc and processed by Asciidoctor.
 
-But, before we get there, I want to share with you my earliest memory of publishing and how it impacts my philosophy today.
+Before we get to that, I want to share my earliest memory of publishing and how it impacts my philosophy about writing today.
 // end::title[]
 
 == Personal Story
 
 // tag::print-shop-box[]
-When I was young, my parents got my siblings and I our first computer, an Apple II, along with a printer, the ImageWriter.
-One of our favorite programs to use was The Print Shop.
+My first computer system was an Apple II with an ImageWriter.
+Anyone remember that setup?
+It was truly a magical machine of entertainment and possibility.
+Best of all, it came bundled with The Print Shop!
 // end::print-shop-box[]
 
 // tag::print-shop-select[]
-Using this program, we could make signs, banners, or greeting cards using an assortment of block-style fonts, clip art, and patterned borders (and, to be sure, we made a lot).
+My siblings and I went nuts making signs and banners and greeting cards.
+There were a few years there when I thought Hallmark was going to go out of business because we were making so many birthday cards ourselves.
 
-We'd then send the job off to the printer to transform our creation into something that existed in the real world.
-Naturally, the printing step of The Print Shop was the highlight.
+My go-to pick amoung the assortment of fonts, graphics, and borders was definitely the skull and crossbones.
+I was told after a few times that while cool, it wasn't necessarily the best choice for birthday cards.
+Whatever.
+I'd just use it then to make that most-important of adolescent items: a sign for my bedroom door that read "`Keep Out!`"
 // end::print-shop-select[]
 
 // tag::print-long-banner[]
-Back then, printing was the only way to share what you had created; to make your statement.
-People didn't have screens in their pockets.
-We adorned our doors and walls with these statements, our favorite being "`Keep Out!`" with a skull and crossbones.
-Happy Birthday was another popular phrase.
-These signs were our version of a web page.
-
-I remember thinking, "`OMG, we can make it say anything we want! What do we want to say?`"
-
-It was my first experience publishing content.
-And it felt amazing.
-That power of being able to write something and have it be transformed into something material.
-The power to express oneself.
-To inform.
+Printing those signs was really my first experience publishing content.
+After all, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
+What an amazing sense of power it gave me.
+I could write and have those words transformed into something material and bigger than on the screen.
+Something tangible.
+And my words affected other people.
+It was such a rush.
 // end::print-long-banner[]
 
 // tag::color-ribbon-cartridge[]
-I was particularly enthralled by the printing process.
-The printer had a ribbon cartridge, which would get dragged across the paper to leave its marks.
-When we sent it one of our creations, it would launch into a flurry of activity, seemingly in a panic to scribe our message onto the matrix.
-I often wondered if it knew what it was making as the message was gradually revealed as it emerged from the spool.
+Now, on the practical side of things, printing was _not_ a speedy process.
+The printer would screech and jerk in a flurry of perpetual commotion.
+We're talking walk-away-and-come-back-in-an-hour kind of speed.
+Plus, the printer ribbons only lasted so long and required a special trip to the store to replace.
+My message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
 // end::color-ribbon-cartridge[]
 
 // tag::print-banner[]
-The speed, or rather lack thereof, was significant because it meant we had to choose our content--our message--wisely.
-Picture the young group of kids huddled around a screen barking out words, all vying to put a message out into the world.
-It was not only my first publishing experience, but also my first collaborative one.
+I also had to share this computer with my siblings.
+We _all_ had something to say and each of us wanted _our_ message to be the one published for the world to see.
+You know, there's nothing more fierce than sibling competition.
+So this was not only my first publishing experience, but also my first collaborative / argumentative one.
 // end::print-banner[]
 
 == Introduction
