@@ -7,7 +7,7 @@
 // tag::title[]
 Welcome everyone!
 
-Today, I'm going to talk to you about how you can elevate the end-to-end content process, from writing to delivery, by treating documentation as code, which starts by authoring your content in AsciiDoc and transforming it with Asciidoctor.
+Today, I'm going to talk to you about how you can elevate your end-to-end content process, from writing to delivery, by treating documentation as code, which starts by authoring your content in AsciiDoc and transforming it with Asciidoctor.
 You'll then see how this system lets you to tie into existing social coding infrastructure for better collaboration and leverage build tools and pipelines for automated publishing.
 What we're really talking about here is reusing tools and process you're already using for your software development.
 
