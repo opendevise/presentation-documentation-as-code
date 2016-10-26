@@ -28,10 +28,10 @@ I'd just use it then to make that most-important of adolescent items: a sign for
 
 // tag::print-long-banner[]
 Printing those signs was really my first experience publishing content.
+// NOTE there's a tie in here with automation as well
 After all, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
 What an amazing sense of power it gave me.
-I could write and have those words transformed into something material and bigger than on the screen.
-Something tangible.
+I could write and have those words transformed into something material, tangible, and bigger than on screen.
 And my words affected other people.
 It was such a rush.
 // end::print-long-banner[]
@@ -41,7 +41,7 @@ Now, on the practical side of things, printing was _not_ a speedy process.
 The printer would screech and jerk in a flurry of perpetual commotion.
 We're talking walk-away-and-come-back-in-an-hour kind of speed.
 Plus, the printer ribbons only lasted so long and required a special trip to the store to replace.
-My message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
+So my message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
 // end::color-ribbon-cartridge[]
 
 // tag::print-banner[]
@@ -54,32 +54,34 @@ So this was not only my first publishing experience, but also my first collabora
 == Introduction
 
 // tag::many-masters[]
-Our technical content today has much to say and must serve many masters, just as the content did in that childhood print shop.
-It's essential that your content workflow be flexible enough to meet these demands.
+Technical content today is not that far removed from my childhood print shop.
+We must still choose our words wisely.
+We must collaborate with others on the creation of content and in making sure the content is available to the world.
+And seeing our words printed is still just as thrilling.
+
+To get there, we need a content workflow that ensures maximum reuse and facilitates strong collaboration while, at the same time, gives us the flexibility to transform the content however we want and publish it wherever it needs to go automatically...and as quickly as possible.
+
+The best way to fulfill all these demands...
 // end::many-masters[]
 
 // tag::separate[]
-I'm not the first--and I won't be the last--to say that the best way to ensure this flexibility is to have a separation of content and presentation (and even the infrastructure that makes the presentation possible).
-That way, you're able to meet the needs of the various stakeholders.
-But there's a careful balance that must be achieved to avoid hindering creation, publication, and collaboration.
-It's a balance that I believe AsciiDoc strikes.
+...is to separate content from presentation--and even the infrastructure that makes the presentation possible.
+That way, you can adapt your content to stakeholder initiatives and an ever-changing landscape.
+
+But there's a careful balance that must be achieved to avoid hindering creation, publication, or collaboration.
+It's a balance I believe Asciidoctor strikes.
 I'll explain why in this talk.
 // end::separate[]
 
-//When evaluating a content system for creating technical documentation, you should consider two questions:
-//
-//* What are the capabilities of the content system?
-//* How do those capabilities align with your needs?
-
 // tag::agenda[]
-I believe we should consider three key capabilities when evaluating the value proposition of a content system.
+// idea for visual: show magnifying glass overlay on list to indicate we're studying each capability
+We should consider three key capabilities when evaluating--and adopting--a content system.
 
 . Creation
 . Publication
 . Collaboration
 
-We'll evaluate AsciiDoc through the lens of these three capabilities to investigate its strengths and learn/discover how to get the most out of them.
-// visual concept: show magnifying glass overlay on list
+We'll evaluate Asciidoctor through the lens of these capabilities to investigate its strengths and discover how to get the most out of it.
 // end::agenda[]
 
 == Creation
