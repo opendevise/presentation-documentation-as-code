@@ -567,25 +567,26 @@ TODO need a wrap-up/transition
 == Conclusion
 
 // tag::recap[]
-In this talk, we evaluated AsciiDoc through the lens of three capabilities: creation; publication; and collaboration.
+Today, we evaluated Asciidoctor through the lens of three capabilities: creation; publication; and collaboration.
+In each case, it's proven to meet the needs of the respective stakeholders, which is essential for forming a robust content system.
 
-In any content system, the writer must be the focus, first and foremost.
-Otherwise, the system is destined for failure.
-It's vital to protect the sanctity of writing.
-But the engineer must be empowered as well to transform that content.
-Content that's locked away cannot serve its function, cannot reach its users across channels.
+With AsciiDoc, writers are able to write with minimal interference from bloated markup and needless structure.
+They can focus on the words, the ideas, and the messages that reach millions of users across the globe, or just the person in the next cubicle, all because the content is separated from the presentation.
 
-Like the technology that it documents, technical writing benefits from many eyes and minds.
-Anything inherently complex does.
-So the system must be friendly to collaboration.
-It's the key to getting contributions as well.
+Engineers are empowered as well since documentation is just another form of code.
+They can use Asciidoctor to transform the AsciiDoc and completely customize the generated output.
+#This is essential since content that's locked away cannot serve its function, and cannot reach its users across channels.#
 
-As we've seen, the Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, converters, and tools, strikes this balance.
-These capabilities happen to be the three pillars of the Asciidoctor project, so we expect the story to only get better.
+Finally, both writers and engineers--as well as anyone else involved in the end product--can collaborate in a systematic, streamlined way that eliminates duplicated effort or duplicated headaches.
+Like the technology it documents, technical writing benefits from many eyes and minds as anything inherently complex does.
+This is a system that welcomes their particiaption.
+It fuels collaboration, encouraging contributions to make good content great.
 // tag::recap[]
 
 // tag::fin[]
-//Write in AsciiDoc, publish everywhere!
+The Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, converters, and tools, brings all these ideas into one.
+
+And since these capabilities happen to be the three pillars of the Asciidoctor project, we expect the story to only get better.
 
 Thank you!
 // end::fin[]
