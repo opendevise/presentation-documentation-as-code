@@ -160,3 +160,9 @@ collaboration::
 * http://www.atarimagazines.com/compute/issue58/review_print_shop.html
 * http://www.theatlantic.com/technology/archive/2016/05/before-emoji-there-was-the-print-shop/483276/
 * http://siftin.blogspot.com/2009/10/when-you-care-enough-to-print-very-best.html
+* http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/
+
+== Terms & Phrases
+
+* markup tagging conventions
+* citations and cross-references
