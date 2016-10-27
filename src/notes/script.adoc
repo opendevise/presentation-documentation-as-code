@@ -35,7 +35,6 @@ I'd just use it then to make that most-important of adolescent items: a sign for
 
 // tag::print-long-banner[]
 Printing those signs was really my first experience publishing content.
-// NOTE there's a tie in here with automation as well
 Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
 What an amazing sense of power it gave me.
 I could write and have those words transformed into something material, tangible, and bigger than on screen.
@@ -47,7 +46,8 @@ It was such a rush.
 Now, on the practical side of things, printing was _not_ a speedy process.
 The printer would screech and jerk in a flurry of perpetual commotion.
 We're talking walk-away-and-come-back-in-an-hour kind of speed.
-//DA: TODO fascinating, first taste of automation (foreshadow)
+//DA: NOTE foreshadow automation here
+//DA: Watching the printer's automation was fascinating, but would quickly put you into a trance. (video)
 //DA: TODO typos were glaring (as you can see if you study banner image); mistakes were made; spell check twice, print once
 Plus, the printer ribbons only lasted so long and required a special trip to the store to replace.
 So my message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
@@ -83,14 +83,21 @@ I'll explain why in this talk.
 // end::separate[]
 
 // tag::agenda[]
-// idea for visual: show magnifying glass overlay on list to indicate we're studying each capability
-We should consider three key capabilities when evaluating--and adopting--a content system.
+//We should consider three key capabilities when evaluating--and adopting--a content system.
+//
+//. Creation
+//. Publication
+//. Collaboration
+//
+//We'll evaluate Asciidoctor through the lens of these capabilities to investigate its strengths and discover how to get the most out of it.
+We'll evaluate Asciidoctor through the lens of the following capabilities in order to investigate its strengths and discover how to get the most out of it.
 
+// idea for visual: show magnifying glass overlay on list to indicate we're studying each capability
 . Creation
 . Publication
 . Collaboration
 
-We'll evaluate Asciidoctor through the lens of these capabilities to investigate its strengths and discover how to get the most out of it.
+Any good content system should score well in all three catagories.
 // end::agenda[]
 
 == Creation
@@ -274,6 +281,7 @@ But that doesn't mean you can't make it look pretty.
 
 // tag::atom[]
 Using a text editor such as Atom with the appropriate add-ons, you can see the final product in a preview pane.
+//alt: see how it's going to look in a preview pane
 You can change, embellish, or restructure the entire document and see what the end result will be in real time.
 
 //(If there's time: Discuss authoring in Atom with the AsciiDoc add-on to get helpful syntax highlighting.
