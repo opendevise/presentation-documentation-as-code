@@ -1,0 +1,7 @@
+https://asciidoctor.org
+
+https://asciidoctor.org[Asciidoctor]
+
+See <<install>>.
+
+See <<install,Installation>>.

@@ -1,0 +1,5 @@
+image::tux.png[Tux,265,314]
+
+video::SCZF6I-Rc4I[youtube,853,480]
+
+icon:star[2x]

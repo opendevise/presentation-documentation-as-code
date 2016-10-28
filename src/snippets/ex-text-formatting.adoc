@@ -1,0 +1,7 @@
+*bold phrase*
+
+_italic phrase_
+
+`literal keyword`
+
+[.type]#custom term#

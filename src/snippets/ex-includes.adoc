@@ -1,0 +1,10 @@
+// tag::chapter[]
+\include::chapters/chapter01.adoc
+// end::chapter[]
+
+// tag::tag[]
+[source,ruby]
+----
+\include::{srcdir}/sample.rb[tag=refinement,indent=0]
+----
+// end::tag[]

@@ -1,0 +1,4 @@
+A paragraph is just consecutive lines of text.
+No special markup is required.
+
+To start a paragraph, offset it by a blank line.

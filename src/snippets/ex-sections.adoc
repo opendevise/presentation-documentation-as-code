@@ -1,0 +1,13 @@
+= Document Title
+
+== Section Level 1
+
+=== Section Level 2
+
+==== Section Level 3
+
+===== Section Level 4
+
+====== Section Level 5
+
+= Part Title (book doctype only)
