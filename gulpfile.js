@@ -33,7 +33,8 @@ gulp.task('js', ['clean:js'], function() {
     .on('error', browserifyPlumber)
     .pipe(source('src/scripts/main.js'))
     .pipe(buffer())
-    .pipe(isDist ? uglify() : through())
+    //uglyify doesn't currently work when using ES6 syntax (perhaps requires upgrade?)
+    //.pipe(isDist ? uglify() : through())
     .pipe(rename('build.js'))
     .pipe(gulp.dest('dist/build'))
     .pipe(connect.reload());
@@ -111,20 +112,20 @@ gulp.task('watch', function() {
 gulp.task('build-branch', ['build'], function() {
   var branch = git.branch();
   if (branch != 'master') {
-    return gulp.src('dist/**/*')
-      .pipe(gulp.dest('dist/@' + branch));
+    return gulp.src('dist/**/*').pipe(gulp.dest('dist/event/' + branch));
   }
 });
 
 gulp.task('publish', ['clean', 'build-branch'], function(done) {
   var branch = git.branch();
-  var opts = { logger: gutil.log }
+  var opts = { logger: gutil.log, message: 'Publish presentation from ' + branch + ' to GitHub pages' }
   if (branch != 'master') {
-    opts.src = (opts.only = '@' + branch) + '/**/*';
+    opts.src = (opts.only = 'event/' + branch) + '/**/*';
   }
   else {
     // only is a list of globby expressions (not git pathspecs)
-    opts.only = ['*', '!@*']
+    // NOTE don't set this option when first creating the gh-pages branch
+    opts.only = ['*', 'event']
   }
   ghpages.publish(path.join(__dirname, 'dist'), opts, done);
 });
