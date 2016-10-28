@@ -4,6 +4,7 @@
 // - code friendly; built-in support for highlighted source blocks
 
 // tag::title[]
+[duration=1m]
 Welcome everyone!
 
 Today, I'm going to talk to you about how you can elevate your end-to-end content process, from writing to delivery, by treating documentation as code.
@@ -14,6 +15,7 @@ What we're talking about here is reusing tools and process for writing that you'
 Before we get into that, I want to share my earliest memory of publishing and how it impacts my philosophy about writing content today.
 // end::title[]
 
+[duration=3m]
 == Personal Story
 
 // tag::print-shop-box[]
@@ -28,16 +30,17 @@ My siblings and I went nuts using it to make signs and banners and greeting card
 There were a few years there when I thought Hallmark was going to go out of business because we were making so many birthday cards ourselves.
 
 My go-to pick among the assortment of fonts, graphics, and borders was definitely the skull and crossbones.
-I was told after a few times that, while cool, it wasn't necessarily the best choice for a birthday card.
+I was told after a few times that, while cool, it wasn't necessarily the best choice for birthday cards.
 Whatever.
-I'd just use it then to make that most-important of adolescent items: a sign for my bedroom door that read "`Keep Out!`"
+I'd just use it, then, to make that most-important of adolescent items: a sign for my bedroom door that read "`Keep Out!`"
 // end::print-shop-select[]
 
 // tag::print-long-banner[]
+Using The Print Shop, of course, concluded with printing.
 Printing those signs was really my first experience publishing content.
-Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
+Back then, we didn't all carry around screens in our pockets, so printing was how we shared our creations with the world.
 What an amazing sense of power it gave me.
-I could write and have those words transformed into something material, tangible, and bigger than on screen.
+I could write and have those words transformed into something material, tangible, and bigger than what was on screen.
 And my words affected other people.
 It was such a rush.
 // end::print-long-banner[]
@@ -54,60 +57,51 @@ So my message--my content--had to be chosen wisely for optimum effect and impact
 // end::color-ribbon-cartridge[]
 
 // tag::print-banner[]
-I also had to share this computer with my siblings.
+I also shared this computer with my siblings.
 We _all_ had something to say and each of us wanted _our_ message to be the one published for the world to see.
 You know there's nothing more fierce than sibling competition.
 So this was not only my first publishing experience, but also my first collaborative / argumentative one.
 //DA: ...feeding into a world of automation
 // end::print-banner[]
 
+[duration=2m]
 == Introduction
 
 // tag::many-masters[]
-Technical content today is not that far removed from my childhood print shop.
-We must still choose our words wisely.
-We must collaborate with others on the creation of content and in making sure it's available to the world.
-And seeing our words printed is still just as thrilling.
+Technical content today is not far removed from my childhood print shop.
+We still have to choose our words wisely.
+We must collaborate with others on the creation of the content.
+And seeing our words published out in the world is still just as thrilling.
 
-To get there, we need a content workflow that ensures maximum reuse and facilitates strong collaboration while, at the same time, gives us the flexibility to transform the content however we want and publish it wherever it needs to go...automatically, and as quickly as possible.
+To get there, we need a content workflow that ensures maximum reuse and facilitates strong collaboration while, at the same time, gives us the flexibility to transform that content however we want and to publish it wherever it needs to go automatically, and as quickly as possible.
+
 The best way to fulfill all these demands...
 // end::many-masters[]
 
 // tag::separate[]
-...is to separate the content from presentation--and even the infrastructure that makes the presentation possible.
-That way, you can adapt your content to ever-changing stakeholder initiatives and technology landscapes.
-
-But there's a careful balance you must achieve to avoid hindering creation, publication, or collaboration.
-It's a balance I believe Asciidoctor strikes.
-I'll explain why in this talk.
+...is to separate content and presentation.
+//and even from the infrastructure that makes the presentation possible.
+That way, you can adapt your content to ever-changing stakeholder initiatives and an evolving technology landscape.
 // end::separate[]
 
 // tag::agenda[]
-//We should consider three key capabilities when evaluating--and adopting--a content system.
-//
-//. Creation
-//. Publication
-//. Collaboration
-//
-//We'll evaluate Asciidoctor through the lens of these capabilities to investigate its strengths and discover how to get the most out of it.
-We'll evaluate Asciidoctor through the lens of the following capabilities in order to investigate its strengths and discover how to get the most out of it.
-
 // idea for visual: show magnifying glass overlay on list to indicate we're studying each capability
-. Creation
-. Publication
-. Collaboration
+But there's a careful balance that must be achieved to avoid hindering creation, publication, or collaboration.
+That's a balance I believe Asciidoctor strikes.
 
-Any good content system should score well in all three catagories.
+In this talk, we'll evaluate Asciidoctor through the lens of these capabilities in order to investigate its viability and strengths and to learn how to get the most out of it.
+Any good content system should score well in all three of these catagories.
 // end::agenda[]
 
+[duration=10m]
 == Creation
 
 // tag::creation[]
-I'm going to start with the writers in the room.
+I'll start with the writers in the room.
 Rest assured, I'm with you.
 
 Like you, I believe content is king.
-I also believe that a content system which doesn't consider the needs of the author first is not sustainable.
+I also believe a content system that doesn't consider the needs of the author first is just not sustainable.
 //alt: never going to work.
 Writers need a system that allows them to do what they do best.
 Writers write.
@@ -115,7 +109,7 @@ Writers write.
 
 // tag::confined[]
 But many content systems seem determined to make this essential task as difficult as possible.
-They're cumbersome, complicated, and downright frustrating.
+For the writer, they're cumbersome, complicated, and downright frustrating.
 And that's tragic.
 //alt: The struggle is real.
 // end::confined[]
@@ -140,10 +134,10 @@ As a writer, would you want to weave your content in and out of this web day-in 
 Yeah, I didn't think so.
 
 Content is shackled by this structure.
-You have to enclose every chunk of content you write in a markup envelope.
+You have to enclose every chunk of content you write in an envelope of markup.
 But why?
 It's so heavy.
-And there's the added burden of having to remember all the tags and when to use them.
+And there's the added burden of having to remember all the tags and when to use each of them.
 
 The ironic part is that the engineer didn't do herself much of a favor either.
 XML tools--especially the ones used in the DocBook toolchain, such as XSLT--are a pain to work with.
@@ -159,7 +153,7 @@ This is LaTeX (LAH-tekh).
 LaTeX is a documentation preparation system (read as: low-level language) for high-quality typesetting widely used in academia.
 
 The message here--if you can even interpret it--is:
-"`I don't see the difference between content, typesetting, and presentation, so I'll just mash all these concerns together.`"
+"`I don't really see the difference between content, typesetting, and presentation, so I'll just mash all these concerns together.`"
 // end::latex[]
 
 // tag::latex-critique-a[]
@@ -167,17 +161,17 @@ O_o
 // end::latex-critique-a[]
 
 // tag::latex-critique-b[]
-Writers get lost in this syntax not only because it looks like a bird nest, but now there's a deluge of dialects that no mere mortal can possibly remember.
+Writers get lost in this syntax, not only because it looks like a bird nest, but now there's this deluge of dialects that no mere mortal can possibly remember.
 // end::latex-critique-b[]
 
 // tag::got-pdf[]
-The other major problem with LaTeX is that is was not designed with multi-channel web publishing in mind.
+The other major problem with LaTeX is that is was not designed with web publishing in mind.
 PDF anyone?
 You're options are limited even before you've begun.
 
-The point is that many content systems cater more--even exclusively--to the technologist rather than the writer.
+The point is that many content systems cater more--even exclusively--to the technologist rather than to the writer.
 
-That has _got_ to change.
+This situation has _got_ to change.
 That's where AsciiDoc comes in to save the day.
 // end::got-pdf[]
 
@@ -201,10 +195,10 @@ That speaks volumes.
 //LAR: That would be more informative and engaging.
 //LAR: I'm not wild about the highlighted list because it isn't "showing" what you're talking about, which is the point, right?
 //LAR: Slides that show the AsciiDoc version and what is created (like the reference manual) would be great.
-The first thing you'll notice is that the syntax is clear & concise.
+The first thing you'll notice about AsciiDoc is that the syntax is clear & concise.
 //LAR: a slide here of the syntax that shows what you mean.
 What you see is predominantly content.
-It's readable in raw form, unlike other formats we've seen.
+It's readable in raw form, unlike the other formats we've seen thus far.
 
 //LAR: Is this quote necessary?
 //LAR: Maybe make it a slide and move it to the end of this section?
@@ -213,9 +207,9 @@ It's readable in raw form, unlike other formats we've seen.
 
 Paragraphs are just paragraphs, no bullshit.
 //LAR: give me an example slide.
-The remaining tagging marks are based on familiar conventions, such as leading asterisks to itemize a list, asterisks around a phrase to emphasize it, and leading equal signs to designate a section title.
+The remaining marks are based on familiar conventions, such as leading asterisks to itemize a list, asterisks or underscores around a phrase to emphasize it, and leading equal signs to designate a section title.
 //LAR: another slide example.
-Keywords that appear in the syntax are based on common terminology such as "`image`" and "`source`".
+Keywords that appear in the syntax are based on common terminology such as `image`, `video`, and `source`.
 
 In general, the syntax is remarkably forgiving, which makes it less daunting for first timers.
 
@@ -224,41 +218,41 @@ Indeed, the language is based on repeatable patterns.
 Extensions further build on these patterns, which we'll get into later.
 
 Finally, the syntax is extremely semantic.
+In fact, AsciiDoc was originally designed as a shorthand for DocBook.
 Each bit of content belongs to a node--a content block or phrase.
-Nodes can be annotated with extra bits of information that states what the content is, how it might be presented, and other properties.
+Nodes can be annotated with extra bits of information that state what the content is, how it might be presented, and other properties.
 // end::asciidoc-qualities[]
 
 // tag::ex-roles[]
 The most versatile semantic information is the role.
 
-Roles, and other such metadata, serve a very important purpose in the AsciiDoc syntax because they allow the writer to pass information to the publisher about the semantics of a node without having to worry how it gets formatted.
+Roles serve a very important purpose in the AsciiDoc syntax because they allow the writer to pass information to the publisher about the semantics of a node without having to worry how it gets formatted.
 The role basically says "`this element has special significance, you deal with it.`"
-This abtraction is central to achieving separation of content and presentation.
-The writer can focus on the what, not the how.
+This abtraction, and other such metadata, is central to achieving the separation of content and presentation.
+The writer gets to focus on the what, not the how.
 // end::ex-roles[]
 
 //DA: QUESTION should the point about line-oriented/left-align go right at beginning, before other characteristics?
 // tag::left-aligned-lines[]
-One reason the syntax is so simple and consistent is because it's both line-oriented and left-aligned.
+One reason the syntax is so simple and consistent is because, as you may have picked up on, it's both line-oriented and left-aligned.
 
+//DA: TODO follow-up with an example of left-align and line-oriented
 Having a syntax that's aligned to the left margin helps keeps the writer rooted.
-You needn't worry how many spaces are needed and content doesn't float out into the ether.
-You rely on line-oriented fences to encompass the content instead.
+You don't have to worry how much indentation you need and content doesn't float out into the ether.
+Instead, you rely on delimiter lines, or "`fences`" to encompass the content.
+AsciiDoc can then assume everything between those lines is content that belongs to that block.
 
-The line-oriented arrangement takes advantage of the fact that source code organized in lines.
+The line-oriented arrangement takes advantage of the fact that source code is organized in lines.
 A lot can be inferred from a line break in the content.
+The line serves as the boundaries of the node.
 Consecutive lines that start with an asterisk, for instance, are clearly items in a list.
+A line above a block that starts with a period is the block's title.
 We do the same thing when writing code.
 Each statement gets its own line, so there's no need for a semicolon to separate statements.
 // end::left-aligned-lines[]
 
 // tag::ex-delimited-block[]
 //LAR: give me an example slide with a result in it, please.
-Delimited blocks are another example.
-You add "`fences`" around a block of content.
-AsciiDoc can then assume everything between those lines is content for that block.
-
-//DA: TODO need a bit of a wrap-up/transition here
 // end::ex-delimited-block[]
 
 // tag::wysiwyg[]
@@ -268,7 +262,7 @@ WYSIWYG.
 // end::wysiwyg[]
 
 // tag::ygwyg[]
-You don't need it.
+I'm here to tell you that you don't need it.
 WYSIWYG places a barrier between you and your content and robs you of a lot of control.
 Unfortunately, it's an all too familiar input component in a CMS.
 I think of a CMS more as a content lobotomy system.
@@ -276,53 +270,52 @@ Instead of suiting your needs, it _seemingly_ solves your problem by making it i
 I like to say, "`You Get What You Get.`"
 // end::ygwyg[]
 
-AsciiDoc, on the otherhand, is readable in raw form and there's no curtain between you and your content.
-But that doesn't mean you can't make it look pretty.
+AsciiDoc, on the other hand, is readable in raw form and there's no curtain between you and your content.
+But that doesn't mean that you can't make it look pretty.
 
 // tag::atom[]
 Using a text editor such as Atom with the appropriate add-ons, you can see the final product in a preview pane.
 //alt: see how it's going to look in a preview pane
-You can change, embellish, or restructure the entire document and see what the end result will be in real time.
+As you can change, embellish, or restructure the document, you can see what the end result is going to look like in real time.
 
 //(If there's time: Discuss authoring in Atom with the AsciiDoc add-on to get helpful syntax highlighting.
 //Also mention AsciidocFX and IntelliJ IDEA.)
 // end::atom[]
 
 // tag::ide-for-writers[]
-I think tools such as Atom can go much further...maturing into a full blown IDE for writers.
+I do believe tools such as Atom can go much further...maturing into a full blown IDE for writers.
 Efforts are underway.
 // end::ide-for-writers[]
 
 // tag::creation-recommended-practices[]
-AsciiDoc has many, _many_ built-in elements and options to organize and annotate your content.
+AsciiDoc has a rich syntax, with many, _many_ built-in elements and options to organize and annotate your content.
 You shouldn't expect to learn it all in one day.
 But you also don't have to.
 
 Most shops gravitate towards a subset of the markup.
 Dialects, particularly using roles, naturally emerge that bring additional consistency and reinforce the impression of simplicity.
 // See http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/
-You can make templates for common document types to give writers an easy starting point.
+You can prepare templates for common document types to help give writers an easy starting point.
 
 // DA: TODO it feels like we should mention cross references here
 Another way to simplify writing with AsciiDoc is to partition large documents.
 For instance, you can split up the source of a book along chapter divisions.
-You can also include common content or extract code samples so they don't clutter the view.
+You can also import common content or extracted code samples so they don't clutter the writer's view.
 AsciiDoc supports all this through it's include mechanism.
-You can even include parts of another document using fragments selected by line number or tag.
+You can even include portions of another document by selecting the snippets by line number or tag.
 //DA: TODO recommend checking out the AsciiDoc Syntax Quick Reference and Awesome Asciidoctor.
 // end::creation-recommended-practices[]
 
 //DA: FIXME the topic of migration feels like it should be somewhere else
 //DA: PSA about pandoc
 // tag::migration[]
-I won't get into migrating your existing content to AsciiDoc today, but be aware it's possible.
+I'm not going to get into how to migrate your existing content to AsciiDoc today, but be aware it is possible.
 There are conversion tools, and many others have made the switch successfully.
 See me afterward and I can give you some pointers.
 // end::migration[]
 
 // tag::dawn[]
-So far, we've just talked about the source, the domain of the writer.
-Now that you have your content encoded in AsciiDoc, what can you do with it?
+Now that the content is encoded in AsciiDoc, who does the writer hand it off to and what can be done with it?
 
 The AsciiDoc syntax is so simple and elegant, it's easy to be deceived that it can only produce primitive output.
 You couldn't be more mistaken.
@@ -333,6 +326,7 @@ Let's shed some light on how we can transform it and where we can publish it.
 It's the dawn of endless possibilities, just like The Print Shop was for me as a child.
 // end::dawn[]
 
+[duration=5m]
 == Publication
 
 // tag::publication[]
@@ -347,6 +341,7 @@ It's important to get some terminology out of the way before continuing.
 AsciiDoc is the language.
 Asciidoctor is the processor.
 
+We've seen AsciiDoc already.
 So what can the processor do?
 // end::asciidoc-vs-asciidoctor[]
 
@@ -363,8 +358,8 @@ That's what the separation of content and presentation affords you.
 // tag::ex-extensions[]
 I'll cite a few examples to get you thinking about what is possible.
 
-* a tab component (#TODO show example#)
-* image macro as background image
+* nested blocks to make a tab component (#TODO show example#)
+* image macro that serves as background image
 * slide notes
 * import a PDF page
 
@@ -373,18 +368,18 @@ You should view AsciiDoc more as a source of record, not a textual representatio
 
 // tag::ast[]
 The bridge to get from content to presentation--you might even say the magic trick--is transformation.
-Transformation is the key to being able to publish to a variety of formats and variants.
+Transformation is the key to being able to publish to a variety of formats and variants of those formats.
 Let's dive into how transformation works.
 
 When Asciidoctor reads in the file, it builds an AST, short for abstract syntax tree.
-That tree gets passed to a converter, which then transforms the content into a target format, such as HTML (or some application of HTML, like slides).
+That tree gets passed to a converter, which then transforms the structure into a target format, such as HTML, or some application of HTML, like slides.
 This presentation, in fact, is the product of that transformation.
 
 One way to extend Asciidoctor is to write a custom converter--as was used for this presentation--or tweak one that already exists by supplying custom templates.
 The only limit to what output formats you can produce is what you're willing and able to create.
 
 Even before the tree is sent to the converter, you have a chance to manipulate it using a tree processor.
-In fact, you don't even need to output anything.
+In fact, you don't even have to output anything.
 You can just use the AST to query the document for information in a contextual way (unlike grep, which is crude and blind to context).
 
 You can go a step further and enhance the parser itself.
@@ -398,13 +393,13 @@ As you can see, you have a lot of control over how the AsciiDoc is interpreted.
 
 // tag::aggregate[]
 Be careful not to fall into the trap of thinking that one input document produces one output document.
-The integration of multiple sources of content into multiple publishing targets is one of the key strengths of Asciidoctor.
+The integration of multiple sources of content into numerous publishing targets is one of the key strengths of Asciidoctor.
 
 For example, you can take one input document that represents a book and produce multiple pages of HTML.
 Reasonable enough.
 Or, you can use the processor, or a toolchain that wraps it, to weave together input from several sources.
 
-We see this technique used in API documentation tools like Spring REST Docs and swagger2markup, which generate AsciiDoc to document the API methods, then combine it with content written by the author to form a final document (or documents) to be published.
+We see this technique used in API documentation tools like Spring REST Docs and swagger2markup, which generate AsciiDoc to document the API methods, then combine that generated content with content written by the author to form a final document (or documents) to be published.
 You can also weave in content that gets derived from the source code, such as a configuration property table.
 Part generated, part scribed.
 //The toolchain plays the role of orchestrator, weaving together disparate content sources.
@@ -428,7 +423,7 @@ The whole publication phase should be managed by a build and fully automated.
 Just like in our childhood print shop, once we sent our masterpiece to the printer, it took over publishing from there.
 I like to call this "`push to publish.`"
 It's the modern day "`send it off to the printer.`"
-We're also borrowing a page from development by implementing continuous docs delivery.
+We're also borrowing a page from development by implementing continuous delivery for the documentation.
 
 The build should not only handle converting the content and publishing it to the various channels, but should describe and manage the infrastructure as well.
 Treat your docs just like you would any other application.
@@ -476,6 +471,7 @@ These interfaces have proven to be incredibly approachable and to encourage cont
 
 Nothing is a stronger force for inviting participation than an "`Edit on GitHub`" link in your docs.
 It presents any page as editable, yet funnels the contributor into a web-based content review workflow based on git.
+The web-based editor recognizes AsciiDoc and can show a preview of it.
 //Think Wikipedia for your docs, backed by git.
 
 You can benefit from the social coding phenomenon simply by moving your documentation to one of these platforms.
