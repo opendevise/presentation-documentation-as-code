@@ -162,6 +162,7 @@ collaboration::
 * http://siftin.blogspot.com/2009/10/when-you-care-enough-to-print-very-best.html
 * http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/
 * https://blog-rmannibucau.rhcloud.com/#/post/generate-configuration-from-code-adoc
+* https://www.youtube.com/watch?v=JvRd7MmAxPw&list=PLZAeFn6dfHpnN8fXXHwPtPY33aLGGhYLJ&index=20[Docs as Code Talk @ Write the Docs]
 
 == Terms & Phrases
 
