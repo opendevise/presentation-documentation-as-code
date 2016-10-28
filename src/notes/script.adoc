@@ -414,7 +414,8 @@ This transformation capability also prevents lock-in.
 Just as you can generate formats for publishing, you can generate to another source format, even AsciiDoc.
 There truly are endless possibilities for your content once it's in the AsciiDoc format and fed into this toolchain.
 
-//If you store the source in a version control system, which we'll talk more about in the next section, the publication tool can even tap into the document history and inject content such as an audit log or make different versions of the document available.
+//If you store the source in a source control system, which we'll talk more about in the next section.
+//The publication tool can even tap into the document history and inject content such as an audit log or make different versions of the document available.
 //This is another powerful way to keep your content DRY and free from doing tasks for information that can be implied.
 //You could extend the abstraction even further and avoid coupling the path of the source file with the output path.
 //Instead, give each document a business ID so you can move files around and still produce the same output structure.
@@ -431,8 +432,8 @@ We're also borrowing a page from development by implementing continuous docs del
 The build should not only handle converting the content and publishing it to the various channels, but should describe and manage the infrastructure as well.
 Treat your docs just like you would any other application.
 These automated builds also aid with collaboration, which we'll launch into next.
-Anyone should be able to build the documentation for local preview.
-The documentation can also be staged for review by different groups.
+//Anyone should be able to build the documentation for local preview.
+//The documentation can also be staged for review by different groups.
 // end::push-to-publish[]
 
 // tag::publish-everywhere[]
@@ -448,121 +449,110 @@ The documentation can also be staged for review by different groups.
 == Collaboration
 
 // tag::collaboration[]
-What you'll find is that AsciiDoc lends itself very well to collaboration because much of the tools we need are already in place.
-While there's a bit more assembly required up front, what you'll likely find is that it blows any proprietary, closed system out of the water.
+We've arrived at the final section of this talk: collaboration.
+This section addresses both the writers and the engineers, as well as anyone else who must work side-by-side to produce technical content.
+This is where the harmony of writing and delivery comes together.
 
-This section addresses both the writers and the engineers, and anyone else involved in the content effort.
-No doubt what makes AsciiDoc ripe for collaboration above all else is that it is version-control friendly.
-AsciiDoc doesn't have "`source control support,`" rather it just lends itself to being source controlled.
+AsciiDoc lends itself well to collaboration because many of the tools needed to collaborate on it are already in place in a development shop.
+In particular, AsciiDoc is ripe for collaboration because it's source control friendly.
+
+AsciiDoc doesn't specifically have "`source control support.`"
+Instead, it simply lends itself to being source controlled.
 No binary blobs, just plain text.
-And version-control systems love plain text.
-You get history, source diffs, rich diffs, branching, merging, etc., all which can be managed with interfaces like GitHub and GitLab.
+And source control systems like git just _love_ plain text.
+You get history, source diffs, rich diffs, branching, merging, etc., all which can be managed through interfaces like GitHub, GitLab, and Bitbucket.
 // end::collaboration[]
 
 // tag::redhat-endorsement[]
-And this is a real force for contribution, as the JBoss BxMS and OpenShit teams have both observed:
+This is a real force for contribution, as the JBoss BxMS and OpenShift teams can attest to.
 
-> The OpenShift team reported that after the migration from DocBook to AsciiDoc, the rate of both internal and external contributions skyrocketed--from several a year to several a week. ...
->
-> ...{sp}Mere days after our migration, we started seeing incoming Merge Requests, where there were none before.
-> Preliminary results hint that this is an observable trend.
-> -- JBoss BxMS Engineering Team
+_(refer to quote in slide)_
 // end::redhat-endorsement[]
 
 // tag::edit-on-github[]
-Nothing drives that more, invites participation more, than the "`Edit on GitHub`" link.
+It's hard to overstate the significance of GitHub (and, increasingly, GitLab) for collaboration.
+These interfaces have proven to be incredibly approachable and to encourage contribution.
 
-But the team does need to understand how the "`Edit on GitHub`" process actually works and know how to manage the git workflow.
-I do strongly recommend investing in git training for your team.
-Knowing how to use git correctly will save time and toes.
+Nothing is a stronger force for inviting participation than an "`Edit on GitHub`" link in your docs.
+It presents any page as editable, yet funnels the contributor into a web-based content review workflow based on git.
+//Think Wikipedia for your docs, backed by git.
+
+You can benefit from the social coding phenomenon simply by moving your documentation to one of these platforms.
+
+As an aside, if you take this route, I strongly recommend investing in git training.
+Everyone on the team needs to understand how the git workflow behind the "`Edit on GitHub`" link works to truly benefit from it.
+And, trust me, knowing how to use git correctly will save time and toes.
 // end::edit-on-github[]
 
 // tag::asciidoc-github-support[]
-It's impossible to overstate the significance of GitHub (and, increasingly, GitLab).
-These interfaces have proven to be incredibly approachable and encourage contribution.
-You can benefit from that phenomenon by moving your documentation there.
+// TODO
 // end::asciidoc-github-support[]
 
 // tag::docs-as-code[]
-All this leads to a strong-held belief of ours.
+All this leads to a strong-held belief of ours:
+
+[verse]
 Docs = Code
-Why is that interesting?
-Well, we have a long history in this industry of collaborating on code.
-If we view docs as just another form of code, we can benefit from all of its processes, pratices, techniques, and tools.
+
+We have a long history in this industry of collaborating on code.
+If we view documentation as just another form of code, we can use code collaboration processes, practices, techniques, and tools to benefit our documentation.
+Strength building on strength for a solid end product.
 // end::docs-as-code[]
 
 // tag::code-review[]
-One of the first tools that comes to mind is code review.
-Countless CMS tools have tried to manufacture a content review workflow.
-Well, we have one right here, (built on an accepted industry practice), supported by incredible code review tools like Gerrit, GitHub, GitLab, and so forth.
+How many CMS tools have tried to manufacture a content review workflow?
+Well, we have one right here, built on an accepted industry practice of code review and supported by incredible tools like Gerrit, GitHub, GitLab, and so forth.
 
-This system is also advantageous to the manager.
-It makes it easy for managers to moniter the workflow, such as to determine what changed or what work was done, simply by looking at the git history or activity charts on GitHub and GitLab.
+This system is also makes it easy for managers to monitor the workflow, determine what changed or track what work was done just by browsing the git history or studying the activity charts on GitHub or GitLab.
 // end::code-review[]
 
-// FIXME missing slides for the following part of the script
-////
-Given that AsciiDoc is just plain text, like developers, writers can use their own tools in their own writing environment.
-No need for special, proprietary, foreign, costly tools.
-In fact, you really should avoid imposing tool/editor choices.
-You can work in isolation, then just push to publish.
-Why is this important?
-"`Happy people collaborate well`" (or are more inclined to).
-How do you coordinate efforts?
+// tag::collaboration-recommended-practices[]
+While AsciiDoc is naturally friendly to source control systems, there are some things you can do to optimize collaboration.
+
+//* Keep changes isolated
+//* Modularize the content
+//* Avoid micro-migrations by using validation tools and a style guide
+//* Plan content changes in an issue tracker
+//* Manage different versions in branches
+//* Provide an automated build
+
+//In general, you want to look for ways that allow you to work in different parts of a file without causing conflicts.
+Try to keep changes isolated.
+One way to do this is by writing using the sentence-per-line method.
+Changes to a sentence do not affect the sentences around it (much like code), and therefore prevents people from step on each other's commits.
+
+You also don't want documents that are too large, so modularize your content and break up monolithic documents.
+//In particular, beware of the Russian Doll Effect (contributing guide inside developer guide inside of README).
+//It's easy to create a script that brings them all back together.
+People can then work on different parts of the documentation without having to coordinate.
+As mentioned earlier, import non-content such as code snippets so it can be managed independently and kept up to date.
+//Don't fall into the trap of putting all your content in a single repository.
+//Instead, organize your repositories by software product or logical product group.
+//We can refer to this repository as a "`content container.`" (a contrast to a "`library layout`" where there's one directory per book).
+
+Use validation tools to catch writing errors early and drastically cut down on expense micro-migrations to fix these mistakes.
+It helps to have a style guide so information is organized consistently without having to do a lot of personal training.
+
 Use an issue tracker to manage bugs, improvements, and content initiatives.
 You can then see content progress as it moves across the issue board.
-<figure:issue board>
 Mention the issue when submitting the pull request that resolves it.
 Just like code.
-<figure:git history>
-////
 
-// tag::collaboration-recommended-practices[]
-Although AsciiDoc is naturally friendly to version-control systems, there are ways to organize the content that let you get even more out of it.
-For instance, I highly recommend writing with a sentence-per-line style.
-By doing so, you isolate changes to the line of content that they affect, much like changing a line of code.
-If you use fixed-column hard-wrapping, the change at the beginning of a paragraph can have a cascading effect, possibly interfering with unrelated lines that someone else is modifying.
-In general, you want to look for ways that allow you to work in different parts of a file without causing conflicts.
-Isolate your changes.
-
-Another way to avoid such conflicts is to use well-factored, modular content.
-You want a consistent, intuitive, and discoverable structure.
-Consider using the topic-based authoring method so the content can be stored separately from the files that aggregate it.
-As mentioned before, import non-content such as code snippets from the original source file (possibly even in a separate repository) so that it can be managed independently and doesn't fall out of date.
-// TODO mention git lfs
-
-It's best to have a style guide: for syntax; for structure; for patterns; for voice.
-Automate the human process.
-This reduces the amount of thought, avoids errors, and drastically cuts down on expensive micro-migrations to fix mistakes.
-Again, the document templates mentioned earlier benefit collaboration as well.
-
-Validation tools are also important because they help ensure quality and consistency.
-You can tap into the Asciidoctor process to perform validations in addition to the ones that come out of the box.
-
-Don't fall into the trap of putting all your content in a single repository.
-Instead, organize your repositories by software product or logical product group.
-We can refer to this repository as a "`content container.`" (a contrast to a "`library layout`" where there's one directory per book)
-You can then assume that all the content in a single repository is versioned together.
+It's best to manage different versions of a document using branches so you can take advantage of the tools the source control system gives you.
+//You can then assume that all the content in a single repository is versioned together.
+To help with this, organize your repositories by software product or logical product group.
+//Don't use different directories to store the versions, as I've seen some teams do.
+Then, have a branch for each major release line.
 If different documents have different versioning schemes, or move at different rates, that's an indicator you should move them to separate repositories.
-Also avoid creating monolithic documents.
-In particular, beware of the Russian Doll Effect (contributing guide inside developer guide inside of README).
-It's easy to create a script that brings them all back together.
+//Take a look at AsciiBinder for an example of a build system that builds out versions of the documentation from the branches.
 
-The reason this partitioning is important is because it enables you to leverage branches properly.
-Have a branch for each major release line.
-Different major (and maybe even minor) versions of the document should be stored in separate branches.
-Don't use different directories to store the versions, as I've seen some teams do.
-You lose a lot of capabilities of the version control system by not using branches because the commands for those systems don't understand how to compare documents that way.
-It's also much harder to search for content.
-
-Take a look at AsciiBinder for an example of a build system that builds out versions of the documentation from the branches.
-Regardless of what structure you choose, anyone should be able to build the output through a simple interface, without having to remember complex commands.
-That's why it's important to have an automated build, which obviously benefits publication as discussed earlier.
+Regardless of how you structure and organize the content, anyone coming along should be able to build the output through a simple interface, without having to remember complex commands.
+This is the role of an automated "`development`" build.
+It makes the documentation approachable and allows contributors to verify the changes they make improve the product in the way they expect (and not the opposite).
+The documentation can also be staged for review by different groups.
 // end::collaboration-recommended-practices[]
 
-TODO need a wrap-up/transition
-
-//(See https://www.youtube.com/watch?v=JvRd7MmAxPw&list=PLZAeFn6dfHpnN8fXXHwPtPY33aLGGhYLJ&index=20)
+As you can see, AsciiDoc allows you to set up many ways to collaborate, bringing all the voices and talents together in one place to make strong, coherent documentation.
 
 == Conclusion
 
@@ -584,7 +574,8 @@ It fuels collaboration, encouraging contributions to make good content great.
 // tag::recap[]
 
 // tag::fin[]
-The Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, converters, and tools, brings all these ideas into one.
+The Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, and tools, brings all these ideas into one.
+While there's a bit more assembly required up front, I'm confident you'll find it blows any proprietary, closed system out of the water.
 
 And since these capabilities happen to be the three pillars of the Asciidoctor project, we expect the story to only get better.
 
