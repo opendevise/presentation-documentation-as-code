@@ -163,6 +163,7 @@ collaboration::
 * http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/
 * https://blog-rmannibucau.rhcloud.com/#/post/generate-configuration-from-code-adoc
 * https://www.youtube.com/watch?v=JvRd7MmAxPw&list=PLZAeFn6dfHpnN8fXXHwPtPY33aLGGhYLJ&index=20[Docs as Code Talk @ Write the Docs]
+* http://www.slideshare.net/evangoer/yuiconf-2013documentationiscode[Thinking of Documentation as Code]
 
 == Terms & Phrases
 
