@@ -29,12 +29,16 @@ include::{uri-script}[tag=print-shop-box]
 
 == !
 
-image::print-shop-select.jpg[role=contain]
+image::print-shop-main-menu.gif[role=contain]
 
 [.cue]
 ****
 include::{uri-script}[tag=print-shop-select]
 ****
+
+== !
+
+video::print-shop-printing.mp4[role=contain,opts=loop]
 
 [#print-long-banner]
 == !
