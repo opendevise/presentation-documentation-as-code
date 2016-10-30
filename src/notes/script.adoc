@@ -108,7 +108,7 @@ Writers write.
 // end::creation[]
 
 // tag::confined[]
-But many content systems seem determined to make this essential task as difficult as possible.
+But many content systems seem determined to make this fundamental task as difficult as possible.
 For the writer, these systems can feel cumbersome, complicated, and downright frustrating.
 And that's tragic.
 //alt: The struggle is real.
@@ -130,6 +130,7 @@ O_o
 // end::docbook-critique-a[]
 
 // tag::docbook-critique-b[]
+//SAW: visual concept - image of a knotted mess or massive, sticky web/goo
 As a writer, would you want to weave your content in and out of this web day-in and day-out?
 Yeah, I didn't think so.
 
@@ -143,6 +144,7 @@ The ironic part is that the engineer didn't do herself much of a favor either.
 XML tools--especially the ones used in the DocBook toolchain, such as XSLT--are a pain to work with.
 
 Nobody wins here.
+//SAW: visual concept - image meme opposite of winning
 // end::docbook-critique-b[]
 
 // tag::latex[]
@@ -162,6 +164,7 @@ O_o
 
 // tag::latex-critique-b[]
 Writers get lost in this syntax, not only because it looks like a bird nest, but now there's this deluge of dialects that no mere mortal can possibly remember.
+//SAW: image concept - labrynth/maze which matches the "get lost" concept
 // end::latex-critique-b[]
 
 // tag::got-pdf[]
@@ -202,8 +205,9 @@ It's readable in raw form, unlike the other formats we've seen thus far.
 
 //LAR: Is this quote necessary?
 //LAR: Maybe make it a slide and move it to the end of this section?
-"#Perfection is achieved not when there's nothing more to add, but when there's nothing left to take away.#"
--- Antoine de Saint-Exubéry
+//SAW: Agree with LAR, the quote, while applicable, isn't needed and probably breaks the flow of the narrative.
+//"#Perfection is achieved not when there's nothing more to add, but when there's nothing left to take away.#"
+//-- Antoine de Saint-Exubéry
 
 Paragraphs are just paragraphs, no bullshit.
 //LAR: give me an example slide.
@@ -211,16 +215,17 @@ The remaining marks are based on familiar conventions, such as leading asterisks
 //LAR: another slide example.
 Keywords that appear in the syntax are based on common terminology such as `image`, `video`, and `source`.
 
-In general, the syntax is remarkably forgiving, which makes it less daunting for first timers.
+And the syntax is remarkably forgiving, which makes it less daunting for first timers.
 
 If you dig deeper, you'll notice a consistency to the syntax.
-Indeed, the language is based on repeatable patterns.
+That's because the language is based on repeatable patterns.
 Extensions further build on these patterns, which we'll get into later.
 
 Finally, the syntax is extremely semantic.
 In fact, AsciiDoc was originally designed as a shorthand for DocBook.
 Each bit of content belongs to a node--a content block or phrase.
 Nodes can be annotated with extra bits of information that state what the content is, how it might be presented, and other properties.
+//SAW: we definitely want an example slide of this.
 // end::asciidoc-qualities[]
 
 // tag::ex-roles[]
@@ -229,12 +234,12 @@ The most versatile semantic information is the role.
 Roles serve a very important purpose in the AsciiDoc syntax because they allow the writer to pass information to the publisher about the semantics of a node without having to worry how it gets formatted.
 The role basically says "`this element has special significance, you deal with it.`"
 This abtraction, and other such metadata, is central to achieving the separation of content and presentation.
-The writer gets to focus on the what, not the how.
+The writer gets to focus on what the content is saying, not how it looks.
 // end::ex-roles[]
 
 //DA: QUESTION should the point about line-oriented/left-align go right at beginning, before other characteristics?
 // tag::left-aligned-lines[]
-One reason the syntax is so simple and consistent is because, as you may have picked up on, it's both line-oriented and left-aligned.
+One reason the syntax is so simple and consistent is because it's both line-oriented and left-aligned.
 
 //DA: TODO follow-up with an example of left-align and line-oriented
 Having a syntax that's aligned to the left margin helps keeps the writer rooted.
@@ -264,8 +269,8 @@ WYSIWYG.
 // tag::ygwyg[]
 I'm here to tell you that you don't need it.
 WYSIWYG places a barrier between you and your content and robs you of a lot of control.
-Unfortunately, it's an all too familiar input component in a CMS.
-I think of a CMS more as a content lobotomy system.
+Unfortunately, it's an all too familiar input mechanism in a CMS.
+We should really call a CMS a CLS, a content lobotomy system.
 Instead of suiting your needs, it _seemingly_ solves your problem by making it impossible to do what you want to do.
 I like to say, "`You Get What You Get.`"
 // end::ygwyg[]
@@ -301,7 +306,7 @@ You can prepare templates for common document types to help give writers an easy
 Another way to simplify writing with AsciiDoc is to partition large documents.
 For instance, you can split up the source of a book along chapter divisions.
 You can also import common content or extracted code samples so they don't clutter the writer's view.
-AsciiDoc supports all this through it's include mechanism.
+AsciiDoc supports all this through its include mechanism.
 You can even include portions of another document by selecting the snippets by line number or tag.
 //DA: TODO recommend checking out the AsciiDoc Syntax Quick Reference and Awesome Asciidoctor.
 // end::creation-recommended-practices[]
