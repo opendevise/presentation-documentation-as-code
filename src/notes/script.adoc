@@ -3,16 +3,16 @@
 // .TODO
 // - code friendly; built-in support for highlighted source blocks
 
-// tag::title[]
 [duration=1m]
+// tag::title[]
 Welcome everyone!
+Today, I'm going to talk about how you can improve your documentation process, from writing through delivery, by treating documentation as code.
 
-Today, I'm going to talk about how you can boost your end-to-end content process, from writing to delivery, by treating documentation as code.
 It starts by authoring content in AsciiDoc and transforming it with Asciidoctor.
-You'll then see how this system lets you to tie into existing social coding infrastructure for better collaboration and leverage build tools and pipelines for automated publishing.
-What we're talking about here is reusing tools and process for writing that you're already using for your software development.
+We'll then look at how this system ties into existing social coding infrastructure to enable better collaboration and adapts build tools and pipelines to automate publishing.
+What we're talking about here is reusing the tools and process for writing that you're already using for software development.
 
-Before we get into that, I want to share my earliest memory of publishing and how it impacts my philosophy about writing content today.
+Before we get into all that, I want to share my earliest memory of publishing and how it relates to the challenges of technical writing today.
 // end::title[]
 
 [duration=3m]
@@ -78,10 +78,10 @@ So this was not only my first publishing experience, but also my first collabora
 // tag::many-masters[]
 Technical content today is not far removed from my childhood print shop.
 We still have to choose our words wisely.
-We must collaborate with others on the creation of the content.
-And seeing our words published out in the world is still just as thrilling.
+We must collaborate with others on the creation of that content.
+And, of course, seeing our words published out in the world is still just as thrilling.
 
-To get there, we need a content workflow that ensures maximum reuse and facilitates strong collaboration while, at the same time, gives us the flexibility to transform that content however we want and to publish it wherever it needs to go automatically, and as quickly as possible.
+To get there, we need a content workflow that ensures maximum reuse and facilitates strong collaboration while, at the same time, gives us the flexibility to transform that content however we want and to publish it wherever it needs to go automatically--and as quickly as possible.
 
 The best way to fulfill all these demands...
 // end::many-masters[]
@@ -89,16 +89,21 @@ The best way to fulfill all these demands...
 // tag::separate[]
 ...is to separate content and presentation.
 //and even from the infrastructure that makes the presentation possible.
-That way, you can adapt your content to ever-changing stakeholder initiatives and evolving technology landscape.
+That way, you can adapt your content to ever-changing stakeholder initiatives and an evolving technology landscape.
 // end::separate[]
 
 // tag::agenda[]
 // idea for visual: show magnifying glass overlay on list to indicate we're studying each capability
-But there's a careful balance that must be achieved to avoid hindering creation, publication, or collaboration.
+But there's a careful balance that must be achieved to avoid hindering:
+
+* creation _(reveal)_,
+* publication _(reveal)_,
+* or collaboration _(reveal)_.
+
 That's a balance I believe Asciidoctor strikes.
 
-In this talk, we'll evaluate Asciidoctor through the lens of these capabilities in order to investigate its viability and strengths and to learn how to get the most out of it.
-Any good content system should score well in all three of these catagories.
+In this talk, we'll evaluate Asciidoctor through the lens of these three capabilities in order to investigate its viability and its strengths and to learn how to get the most out of it.
+Any good content system should score well in all three.
 // end::agenda[]
 
 [duration=10m]
@@ -575,7 +580,7 @@ They can focus on the words, the ideas, and the messages that reach millions of 
 
 Engineers are empowered as well since documentation is just another form of code.
 They can use Asciidoctor to transform the AsciiDoc and completely customize the generated output.
-#This is essential since content that's locked away cannot serve its function, and cannot reach its users across channels.#
+#This is critical since content that's locked away cannot serve its function, and cannot reach its users across channels.#
 
 Finally, both writers and engineers--as well as anyone else involved in the end product--can collaborate in a systematic, streamlined way that eliminates duplicated effort or duplicated headaches.
 Like the technology it documents, technical writing benefits from many eyes and minds as anything inherently complex does.
