@@ -16,11 +16,18 @@ Dan Allen
 include::{uri-script}[tag=title]
 ****
 
-[#print-shop-box]
 == !
 
-//image::print-shop-box.jpg[role=contain]
-image::print-shop-home.jpg[role=contain]
+image::imagewriter-banner.jpg[role=contain]
+
+[.cue]
+****
+include::{uri-script}[tag=imagewriter]
+****
+
+== !
+
+image::print-shop-box.jpg[role=contain]
 
 [.cue]
 ****
@@ -33,21 +40,34 @@ image::print-shop-main-menu.gif[role=contain]
 
 [.cue]
 ****
-include::{uri-script}[tag=print-shop-select]
+include::{uri-script}[tag=print-shop-menu]
 ****
 
 == !
 
-video::print-shop-printing.mp4[role=contain,opts=loop]
+image::skull-no-text.svg[role=contain]
 
-[#print-long-banner]
+[.cue]
+****
+include::{uri-script}[tag=print-shop-ref]
+****
+
 == !
 
 image::imagewriter-banner-long.jpg[role=contain]
 
 [.cue]
 ****
-include::{uri-script}[tag=print-long-banner]
+include::{uri-script}[tag=print-banner]
+****
+
+== !
+
+video::print-shop-printing.mp4[role=contain,opts=loop]
+
+[.cue]
+****
+include::{uri-script}[tag=printing-screen]
 ****
 
 == !
@@ -56,16 +76,16 @@ image::imagewriter-color-ribbon-cartridge.jpg[]
 
 [.cue]
 ****
-include::{uri-script}[tag=color-ribbon-cartridge]
+include::{uri-script}[tag=ribbon-cartridge]
 ****
 
 == !
 
-image::imagewriter-banner.jpg[role=contain]
+image::print-shop-thinking.gif[role=contain]
 
 [.cue]
 ****
-include::{uri-script}[tag=print-banner]
+include::{uri-script}[tag=thinking-screen]
 ****
 
 == !

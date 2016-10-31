@@ -18,51 +18,59 @@ Before we get into that, I want to share my earliest memory of publishing and ho
 [duration=3m]
 == Personal Story
 
-// tag::print-shop-box[]
+// tag::imagewriter[]
 My first computer system was an Apple II with an ImageWriter.
 Anyone remember that setup?
 It was truly a magical machine of entertainment and possibility.
+// end::imagewriter[]
+// tag::print-shop-box[]
 Best of all, it came bundled with The Print Shop!
 // end::print-shop-box[]
 
-// tag::print-shop-select[]
-My siblings and I went nuts using it to make signs and banners and greeting cards.
-There were a few years there when I thought Hallmark was going to go out of business because we were making so many birthday cards ourselves.
+// tag::print-shop-menu[]
+My siblings and I went nuts using The Print Shop to make signs and banners and greeting cards.
+As a matter of fact, there were a few years there when I thought Hallmark would go out of business because we were making so many birthday cards ourselves.
+// end::print-shop-menu[]
 
+// tag::print-shop-ref[]
 My go-to pick among the assortment of fonts, graphics, and borders was definitely the skull and crossbones.
 I was told after a few times that, while cool, it wasn't necessarily the best choice for birthday cards.
 Whatever.
-I'd just use it, then, to make that most-important of adolescent items: a sign for my bedroom door that read "`Keep Out!`"
-// end::print-shop-select[]
-
-// tag::print-long-banner[]
-Using The Print Shop, of course, concluded with printing.
-Printing those signs was really my first experience publishing content.
-Back then, we didn't all carry around screens in our pockets, so printing was how we shared our creations with the world.
-What an amazing sense of power it gave me.
-I could write and have those words transformed into something material, tangible, and bigger than what was on screen.
-And my words affected other people.
-It was such a rush.
-// end::print-long-banner[]
-
-// tag::color-ribbon-cartridge[]
-Now, on the practical side of things, printing was _not_ a speedy process.
-The printer would screech and jerk in a flurry of perpetual commotion.
-We're talking walk-away-and-come-back-in-an-hour kind of speed.
-//DA: NOTE foreshadow automation here
-//DA: Watching the printer's automation was fascinating, but would quickly put you into a trance. (video)
-//DA: TODO typos were glaring (as you can see if you study banner image); mistakes were made; spell check twice, print once
-Plus, the printer ribbons only lasted so long and required a special trip to the store to replace.
-So my message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
-// end::color-ribbon-cartridge[]
+I'd just go on to use to make that most important of adolescent items: a sign for my bedroom door that read, "`Keep Out!`"
+// end::print-shop-ref[]
 
 // tag::print-banner[]
-I also shared this computer with my siblings.
+Using The Print Shop, of course, involved printing.
+Printing those signs, banners, and cards was really my first experience publishing content.
+// ..and with automation
+
+Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
+What an amazing sense of power it gave me.
+I could write and have those words transformed into something material, tangible, and bigger than what was on the screen.
+And my words affected other people.
+It was such a thrill.
+// end::print-banner[]
+
+// tag::printing-screen[]
+Now, on the practical side of things, printing was _not_ a speedy process.
+Once the printer revved up, it would screech and jerk in a flurry of perpetual commotion until the job was complete.
+Watching the printer's automation was fascinating, but would quickly put you into a trance.
+So we're talking walk-away-and-come-back-in-an-hour kind of speed.
+//DA: TODO typos were glaring (as you can see if you study banner image); mistakes were made; spell check twice, print once
+// end::printing-screen[]
+// tag::ribbon-cartridge[]
+Besides, the printer ribbons only lasted so long and required a special trip to the store to replace.
+So my message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
+// end::ribbon-cartridge[]
+
+// tag::thinking-screen[]
+I also had to share this computer with my siblings.
+And you know there's nothing more fierce than sibling competition.
 We _all_ had something to say and each of us wanted _our_ message to be the one published for the world to see.
-You know there's nothing more fierce than sibling competition.
+Since each print job would completely tie up the computer, we were forced by circumstance to work together.
 So this was not only my first publishing experience, but also my first collaborative / argumentative one.
 //DA: ...feeding into a world of automation
-// end::print-banner[]
+// end::thinking-screen[]
 
 [duration=2m]
 == Introduction
