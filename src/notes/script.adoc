@@ -12,7 +12,7 @@ It starts by authoring content in AsciiDoc and transforming it with Asciidoctor.
 We'll then look at how this system ties into existing social coding infrastructure to enable better collaboration and adapts build tools and pipelines to automate publishing.
 What we're talking about here is reusing the tools and process for writing that you're already using for software development.
 
-Before we get into all that, I want to share my earliest memory of publishing and how it relates to the challenges of technical writing today.
+Before we get into all that, I want to share my earliest memory of publishing and how it relates to challenges in technical writing today.
 // end::title[]
 
 [duration=3m]
@@ -41,10 +41,10 @@ I'd just go on to use to make that most important of adolescent items: a sign fo
 
 // tag::print-banner[]
 Using The Print Shop, of course, involved printing.
+Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
+
 Printing those signs, banners, and cards was really my first experience publishing content.
 // ..and with automation
-
-Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
 What an amazing sense of power it gave me.
 I could write and have those words transformed into something material, tangible, and bigger than what was on the screen.
 And my words affected other people.
@@ -58,6 +58,7 @@ Watching the printer's automation was fascinating, but would quickly put you int
 So we're talking walk-away-and-come-back-in-an-hour kind of speed.
 //DA: TODO typos were glaring (as you can see if you study banner image); mistakes were made; spell check twice, print once
 // end::printing-screen[]
+
 // tag::ribbon-cartridge[]
 Besides, the printer ribbons only lasted so long and required a special trip to the store to replace.
 So my message--my content--had to be chosen wisely for optimum effect and impact, and to keep my parent's grievances about using up the ribbon to a minimum.
@@ -67,7 +68,7 @@ So my message--my content--had to be chosen wisely for optimum effect and impact
 I also had to share this computer with my siblings.
 And you know there's nothing more fierce than sibling competition.
 We _all_ had something to say and each of us wanted _our_ message to be the one published for the world to see.
-Since each print job would completely tie up the computer, we were forced by circumstance to work together.
+Since each print job would completely tie up the computer, we were forced to work together by circumstance.
 So this was not only my first publishing experience, but also my first collaborative / argumentative one.
 //DA: ...feeding into a world of automation
 // end::thinking-screen[]
