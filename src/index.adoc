@@ -45,7 +45,8 @@ include::{uri-script}[tag=print-shop-menu]
 
 == !
 
-image::skull-no-text.svg[role=contain]
+//image::skull-no-text.svg[role=contain]
+image::skull.svg[role=contain]
 
 [.cue]
 ****
