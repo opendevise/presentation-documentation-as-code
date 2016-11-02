@@ -44,7 +44,7 @@ Using The Print Shop, of course, involved printing.
 Back then, we didn't all carry around screens in our pockets, so printing was how we'd share our creations with the world.
 
 Printing those signs, banners, and cards was really my first experience publishing content.
-// ..and with automation
+// ..and with automation (and software in general)
 What an amazing sense of power it gave me.
 I could write and have those words transformed into something material, tangible, and bigger than what was on the screen.
 And my words affected other people.
@@ -149,7 +149,7 @@ As a writer, would you want to weave your content in and out of this web day-in 
 Yeah, I didn't think so.
 
 Content is shackled by this structure.
-You have to enclose every chunk of content you write in an envelope of markup.
+You have to enclose every chunk of content in an envelope of markup.
 But why?
 It's so heavy.
 And there's the added burden of having to remember all the tags and when to use each of them.
@@ -281,12 +281,15 @@ WYSIWYG.
 // end::wysiwyg[]
 
 // tag::ygwyg[]
-I'm here to tell you that you don't need it.
+But is it really a problem?
+Yeah, I don't think so.
+//I'm here to tell you that you don't need it.
 WYSIWYG places a barrier between you and your content and robs you of a lot of control.
 Unfortunately, it's an all too familiar input mechanism in a CMS.
 We should really call a CMS a CLS, a content lobotomy system.
 Instead of suiting your needs, it _seemingly_ solves your problem by making it impossible to do what you want to do.
 I like to say, "`You Get What You Get.`"
+//alt: What You Get Is What You Get (WYGIWYG)
 // end::ygwyg[]
 
 AsciiDoc, on the other hand, is readable in raw form and there's no curtain between you and your content.
@@ -299,11 +302,14 @@ As you can change, embellish, or restructure the document, you can see what the 
 
 //(If there's time: Discuss authoring in Atom with the AsciiDoc add-on to get helpful syntax highlighting.
 //Also mention AsciidocFX and IntelliJ IDEA.)
+// Play on IntelliJ logo; "Write with Pleasure"
 // end::atom[]
 
 // tag::ide-for-writers[]
 I do believe tools such as Atom can go much further...maturing into a full blown IDE for writers.
-Efforts are underway.
+//Efforts are underway.
+Imagine Alt+Enter for synonyms.
+We're just steps away.
 // end::ide-for-writers[]
 
 // tag::creation-recommended-practices[]
@@ -491,7 +497,11 @@ These interfaces have proven to be incredibly approachable and to encourage cont
 Nothing is a stronger force for inviting participation than an "`Edit on GitHub`" link in your docs.
 It presents any page as editable, yet funnels the contributor into a web-based content review workflow based on git.
 The web-based editor recognizes AsciiDoc and can show a preview of it.
-//Think Wikipedia for your docs, backed by git.
+// DA: Think Wikipedia for your docs, backed by git.
+// HS:
+What is a wiki, after all.
+It's for writing in some sort of markup language that you can edit on the web.
+We have all the advantages of a wiki, like Wikipedia, but it's also backed by git.
 
 You can benefit from the social coding phenomenon simply by moving your documentation to one of these platforms.
 
