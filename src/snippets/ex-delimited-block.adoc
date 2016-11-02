@@ -1,4 +1,5 @@
-====
+.AsciiDoc quick review
+****
 Here's a sample AsciiDoc document:
 
 [source,asciidoc]
@@ -11,4 +12,4 @@ We'll show you how easy it is to...
 ----
 
 The document header is not required.
-====
+****

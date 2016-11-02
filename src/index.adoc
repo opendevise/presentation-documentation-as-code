@@ -278,20 +278,60 @@ include::{uri-script}[tag=asciidoc]
 include::{uri-script}[tag=asciidoc-qualities]
 ****
 
-[.sheet%conceal]
-== Role Examples
+[.sheet]
+== !
 
 [source,asciidoc]
 ----
-[.path]#gradle/wrapper/gradle-wrapper.properties#
+include::snippets/ex-paragraphs.adoc[]
+----
 
-[.topic]
-== Service Workers
+[.sheet]
+== !
 
-[.cue]
-****
-Don't forget to say these words.
-****
+[source,asciidoc]
+----
+include::snippets/ex-sections.adoc[]
+----
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+include::snippets/ex-lists.adoc[tag=unordered]
+----
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+include::snippets/ex-lists.adoc[tag=ordered]
+----
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+include::snippets/ex-multimedia.adoc[]
+----
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+include::snippets/ex-text-formatting.adoc[]
+----
+
+[.sheet]
+== !
+
+[source,asciidoc]
+----
+include::snippets/ex-roles.adoc[]
 ----
 
 [.cue]
@@ -312,14 +352,9 @@ include::{uri-script}[tag=left-aligned-lines]
 == !
 
 [source,asciidoc]
-----
-.Sidebar Title
-====
-First paragraph in the sidebar.
-
-Another paragraph in the sidebar.
-====
-----
+------
+include::snippets/ex-delimited-block.adoc[]
+------
 
 [.cue]
 ****
