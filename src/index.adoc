@@ -620,16 +620,30 @@ include::{uri-script}[tag=redhat-endorsement]
 include::{uri-script}[tag=edit-on-github]
 ****
 
-== Go Git It
+== !
+image::ss-github-rendered-file.png[role=canvas]
 
-== AsciiDoc icon:github[] GitHub
+== !
+image::ss-github-edit-file-button.png[role=canvas]
 
-[.cue]
-****
-include::{uri-script}[tag=asciidoc-github-support]
-****
+== !
+image::ss-github-edit-file.png[role=canvas]
+
+== !
+image::ss-github-preview-changes.png[role=canvas]
+
+== !
+image::ss-github-commit-changes.png[role=canvas]
+
+//== AsciiDoc icon:github[] GitHub
+//
+//[.cue]
+//****
+//include::{uri-script}[tag=asciidoc-github-support]
+//****
 
 == Docs = Code
+//== Go Git It
 
 [.cue]
 ****
