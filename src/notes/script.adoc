@@ -8,11 +8,12 @@
 Welcome everyone!
 Today, I'm going to talk about how you can improve your documentation process, from writing through delivery, by treating documentation as code.
 
-It starts by authoring content in AsciiDoc and transforming it with Asciidoctor.
-We'll then look at how this system ties into existing social coding infrastructure to enable better collaboration and adapts build tools and pipelines to automate publishing.
+//HS: Don't give too much away here; move to conclusion?
+//It starts by authoring content in AsciiDoc and transforming it with Asciidoctor.
+//We'll then look at how this system ties into existing social coding infrastructure to enable better collaboration and adapts build tools and pipelines to automate publishing.
 What we're talking about here is reusing the tools and process for writing that you're already using for software development.
 
-Before we get into all that, I want to share my earliest memory of publishing and how it relates to challenges in technical writing today.
+But before we get into that, I want to share my earliest memory of publishing and how it relates to challenges in technical writing today.
 // end::title[]
 
 [duration=3m]
@@ -130,56 +131,53 @@ And that's tragic.
 
 // DJA: Let's assume we're looking to create a document like this (show published output). What's out there that we can use write this?
 
-// tag::docbook[]
+// tag::docbook-ex-1[]
 Anyone recognize this?
 Anyone like it?
 
 This is DocBook.
+// end::docbook-ex-1[]
+// tag::docbook[]
 DocBook is an XML schema that's highly structured and semantic with a keen focus on separating content and presentation.
 So far, so good, right?
 // end::docbook[]
 
-// tag::docbook-critique-a[]
-O_o
-// end::docbook-critique-a[]
+// tag::docbook-ex-2[]
+And you thought we were done.
 
-// tag::docbook-critique-b[]
 //SAW: visual concept - image of a knotted mess or massive, sticky web/goo
 As a writer, would you want to weave your content in and out of this web day-in and day-out?
 Yeah, I didn't think so.
 
-Content is shackled by this structure.
+The content is shackled by this structure.
 You have to enclose every chunk of content in an envelope of markup.
-But why?
 It's so heavy.
 And there's the added burden of having to remember all the tags and when to use each of them.
 
 The ironic part is that the engineer didn't do herself much of a favor either.
 XML tools--especially the ones used in the DocBook toolchain, such as XSLT--are a pain to work with.
 
-Nobody wins here.
+Nobody wins.
 //SAW: visual concept - image meme opposite of winning
-// end::docbook-critique-b[]
+// end::docbook-ex-2[]
 
-// tag::latex[]
+// tag::latex-ex-1[]
 Moving on, how about this?
-
 Clearly, the engineer was having fun while the writer was away.
 This is LaTeX (LAH-tekh).
-LaTeX is a documentation preparation system (read as: low-level language) for high-quality typesetting widely used in academia.
+// end::latex-ex-1[]
 
-The message here--if you can even interpret it--is:
-"`I don't really see the difference between content, typesetting, and presentation, so I'll just mash all these concerns together.`"
+// tag::latex[]
+LaTeX is a documentation preparation system (read as: low-level language) for high-quality typesetting widely used in academia.
 // end::latex[]
 
-// tag::latex-critique-a[]
-O_o
-// end::latex-critique-a[]
+// tag::latex-ex-2[]
+The message here--if you can even interpret it--is:
+"`I don't really see the difference between content, typesetting, and presentation, so I'll just mash all these concerns together.`"
 
-// tag::latex-critique-b[]
 Writers get lost in this syntax, not only because it looks like a bird nest, but now there's this deluge of dialects that no mere mortal can possibly remember.
 //SAW: image concept - labrynth/maze which matches the "get lost" concept
-// end::latex-critique-b[]
+// end::latex-ex-2[]
 
 // tag::got-pdf[]
 The other major problem with LaTeX is that is was not designed with web publishing in mind.
@@ -192,19 +190,21 @@ This situation has _got_ to change.
 That's where AsciiDoc comes in to save the day.
 // end::got-pdf[]
 
-// tag::asciidoc[]
+// tag::asciidoc-ex[]
 How about this instead?
-// end::asciidoc[]
 
-// tag::asciidoc-critique[]
-\o/
-
-Ahh.
+This is AsciiDoc.
+// end::asciidoc-ex[]
+// tag::asciidoc-fox-approves[]
+//The fox likes it.
+Mmmm.
+// end::asciidoc-fox-approves[]
+// tag::asciidoc[]
 We created AsciiDoc as a writer-centric markup system.
 And it shows.
 The reaction many writers have when they switch to this syntax is, "`I can finally see my content!`"
 That speaks volumes.
-// end::asciidoc-critique[]
+// end::asciidoc[]
 
 // concise * consistent * semantic
 // tag::asciidoc-qualities[]
@@ -331,6 +331,7 @@ You can even include portions of another document by selecting the snippets by l
 //DA: TODO recommend checking out the AsciiDoc Syntax Quick Reference and Awesome Asciidoctor.
 // end::creation-recommended-practices[]
 
+////
 //DA: FIXME the topic of migration feels like it should be somewhere else
 //DA: PSA about pandoc
 // tag::migration[]
@@ -338,6 +339,7 @@ I'm not going to get into how to migrate your existing content to AsciiDoc today
 There are conversion tools, and many others have made the switch successfully.
 See me afterward and I can give you some pointers.
 // end::migration[]
+////
 
 // tag::dawn[]
 Now that the content is encoded in AsciiDoc, who does the writer hand it off to and what can be done with it?

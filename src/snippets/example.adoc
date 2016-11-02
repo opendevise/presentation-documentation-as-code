@@ -1,0 +1,27 @@
+= Documentation as Code
+Author Name <author@example.org>
+v1.0.0, 2016-11-02
+:toc: left
+
+[abstract]
+Start with an abstract--the façade of your article.
+
+== Beginning
+
+* Mission
+* Goals
+
+== Middle
+
+[source,ruby]
+----
+Asciidoctor.convert_file 'example.adoc', safe: :safe
+----
+
+image::screenshot.png[Screenshot]
+
+NOTE: All good things must come to an end.
+
+== End
+
+"`That's all, folks!`"

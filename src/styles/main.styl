@@ -17,8 +17,9 @@ h2
 header
   h2
     font-size 1.6667rem
-    -webkit-text-stroke 0.015em rgb(51,51,51)
-    -webkit-text-fill-color #fff
+    //-webkit-text-stroke 0.015em rgb(51,51,51)
+    //-webkit-text-fill-color #fff
+    color #999
     margin 0 0 -2rem 3rem
   h3
     font-size 3rem
@@ -132,20 +133,25 @@ span.underline
 
 section.title
   h1
-    font-size 4.5rem
+    font-size 4rem
     margin 0
     line-height 1.1
     text-align center
-    color rgb(72,140,183)
-    -webkit-text-stroke 0.015em rgb(72,140,183)
-    -webkit-text-fill-color #fff
-    text-shadow 0.015em 0.01em 0 rgba(72,140,183,.85)
+    //color rgb(72,140,183)
+    //-webkit-text-stroke 0.015em rgb(72,140,183)
+    //-webkit-text-fill-color #fff
+    //text-shadow 0.015em 0.01em 0 rgba(72,140,183,.85)
+  h2
+    margin 0.25em 0 0 0
+    text-align center
+    //-webkit-text-fill-color unset
+    //-webkit-text-stroke unset
   p.author
     color #4d4d4d
     font-family Jura, sans-serif
     height 0
     position relative
-    top 1em
+    top 3.5em
     & > span
       padding 0 0.5em
 
@@ -217,11 +223,16 @@ section.overlay
   h2
     font-size 2.5rem
     color #fff 
-    -webkit-text-stroke 0.025em #fff
-    -webkit-text-fill-color transparent
+    text-shadow 1px 1px 3px #000
+    //-webkit-text-stroke 0.025em #fff
+    //-webkit-text-fill-color transparent
 
 section.inverse
   background-color #000
+
+section.properties
+  h2
+    margin 0
 
 pre.source
   font-size 0.8rem

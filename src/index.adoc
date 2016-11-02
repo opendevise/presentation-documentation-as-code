@@ -46,7 +46,6 @@ include::{uri-script}[tag=print-shop-menu]
 
 == !
 
-//image::skull-no-text.svg[role=contain]
 image::skull.svg[role=contain]
 
 [.cue]
@@ -140,14 +139,28 @@ icon:paint-brush[fw,role=active] icon:send[fw] icon:code-fork[fw]
 include::{uri-script}[tag=creation]
 ****
 
-== "`Writers Write`"
+== Writers Write
 
 == !
-image::confined-bobcat.jpg[role=canvas]
+image::goat-on-cliff.jpg[role=canvas]
 
 [.cue]
 ****
 include::{uri-script}[tag=confined]
+****
+
+[.sheet%conceal]
+== DocBook Example (Part 1)
+
+[source,xml]
+----
+include::snippets/example.xml[lines=1..25]
+...
+----
+
+[.cue]
+****
+include::{uri-script}[tag=docbook-ex-1]
 ****
 
 [.subject]
@@ -159,37 +172,33 @@ include::{uri-script}[tag=docbook]
 ****
 
 [.sheet%conceal]
-== DocBook Example (Part 1)
-
-[source,xml]
-----
-include::snippets/sample.xml[lines=1..24]
-...
-----
-
-[.sheet%conceal]
 == DocBook Example (Part 2)
 
 [source,xml]
 ----
 ...
-include::snippets/sample.xml[lines=25..-1]
+include::snippets/example.xml[lines=26..51]
+...
 ----
 
-== !
-image::stunned-owl.jpg[role=canvas]
-
 [.cue]
 ****
-include::{uri-script}[tag=docbook-critique-a]
+include::{uri-script}[tag=docbook-ex-2]
 ****
 
 == !
-image::stuck-swan.jpg[role=canvas]
+
+[.sheet%conceal]
+== LaTeX Example
+
+[source,tex]
+----
+include::snippets/example.tex[]
+----
 
 [.cue]
 ****
-include::{uri-script}[tag=docbook-critique-b]
+include::{uri-script}[tag=latex-ex-1]
 ****
 
 [.subject]
@@ -205,23 +214,12 @@ include::{uri-script}[tag=latex]
 
 [source,tex]
 ----
-include::snippets/sample.tex[]
+include::snippets/example.tex[]
 ----
 
-== !
-image::skeptical-squirrel.jpg[role=canvas]
-
 [.cue]
 ****
-include::{uri-script}[tag=latex-critique-a]
-****
-
-== !
-image::bowerbird-nest.jpg[role=canvas]
-
-[.cue]
-****
-include::{uri-script}[tag=latex-critique-b]
+include::{uri-script}[tag=latex-ex-2]
 ****
 
 == Got icon:file-pdf-o[fw]?
@@ -229,6 +227,29 @@ include::{uri-script}[tag=latex-critique-b]
 [.cue]
 ****
 include::{uri-script}[tag=got-pdf]
+****
+
+== !
+
+[.sheet%conceal]
+== AsciiDoc Example
+
+[source,asciidoc]
+------
+include::snippets/example.adoc[]
+------
+
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-ex]
+****
+
+== !
+image::hungry-fox.jpg[role=canvas]
+
+[.cue]
+****
+include::{uri-script}[tag=asciidoc-fox-approves]
 ****
 
 [.subject]
@@ -239,28 +260,12 @@ include::{uri-script}[tag=got-pdf]
 include::{uri-script}[tag=asciidoc]
 ****
 
-[.sheet%conceal]
-== AsciiDoc Example
-
-[source,asciidoc]
-----
-include::snippets/sample.adoc[]
-----
-
-== !
-image::hungry-fox.jpg[role=canvas]
-
-[.cue]
-****
-include::{uri-script}[tag=asciidoc-critique]
-****
-
-[%build%conceal]
-== AsciiDoc Qualities
+[.properties]
+== AsciiDoc is...
 
 [%build.spotlight]
 * clear & concise
-* paragraphs are paragraphs
+* paragraphs as paragraphs
 * familiar conventions
 * common terminology
 * forgiving syntax
@@ -295,6 +300,7 @@ include::{uri-script}[tag=ex-roles]
 ****
 
 == !
+
 image::align-left.svg[width=250]
 
 [.cue]
@@ -320,7 +326,7 @@ Another paragraph in the sidebar.
 include::{uri-script}[tag=ex-delimited-block]
 ****
 
-== No WYSIWYG?
+== No WYSIWYG?!?
 
 [.cue]
 ****
@@ -368,12 +374,12 @@ include::{uri-script}[tag=atom]
 include::{uri-script}[tag=creation-recommended-practices]
 ****
 
-== Migration
-
-[.cue]
-****
-include::{uri-script}[tag=migration]
-****
+//== Migration
+//
+//[.cue]
+//****
+//include::{uri-script}[tag=migration]
+//****
 
 == !
 image::breaking-dawn-longs-peak.jpg[role=canvas]
@@ -507,7 +513,7 @@ include::{uri-script}[tag=aggregate]
 include::{uri-script}[tag=endless-possibilities]
 ****
 
-== "`Push to Publish`"
+== Push to Publish
 
 [.cue]
 ****
@@ -572,15 +578,14 @@ include::{uri-script}[tag=redhat-endorsement]
 include::{uri-script}[tag=redhat-endorsement]
 ****
 
-== !
-image::confident-badger.jpg[role=canvas]
-
 == icon:github[] [.underline]#Edit on GitHub#
 
 [.cue]
 ****
 include::{uri-script}[tag=edit-on-github]
 ****
+
+== Go Git It
 
 == AsciiDoc icon:github[] GitHub
 

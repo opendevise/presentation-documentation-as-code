@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0"
+    xmlns:xl="http://www.w3.org/1999/xlink" xml:lang="en">
+  <info>
+    <title>Documentation as Code</title>
+    <date>2016-11-02</date>
+    <author>
+      <personname>
+        <firstname>Author</firstname>
+        <surname>Name</surname>
+      </personname>
+      <email>author@example.org</email>
+    </author>
+    <authorinitials>AN</authorinitials>
+    <revhistory>
+      <revision>
+        <revnumber>1.0.0</revnumber>
+        <date>2016-11-02</date>
+        <authorinitials>AN</authorinitials>
+      </revision>
+    </revhistory>
+  </info>
+  <abstract>
+    <simpara>Start with an abstract&#8212;the façade of your article.</simpara>
+  </abstract>
+  <section xml:id="_beginning">
+    <title>Beginning</title>
+    <itemizedlist>
+      <listitem>
+        <simpara>Mission</simpara>
+      </listitem>
+      <listitem>
+        <simpara>Goals</simpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section xml:id="_middle">
+    <title>Middle</title>
+    <programlisting language="ruby" linenumbering="unnumbered"><![CDATA[
+Asciidoctor.convert_file 'example.adoc', safe: :safe
+]]></programlisting>
+    <informalfigure>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="screenshot.png"/>
+        </imageobject>
+        <textobject>
+          <phrase>Screenshot</phrase>
+        </textobject>
+      </mediaobject>
+    </informalfigure>
+    <note>
+      <simpara>All good things must come to an end.</simpara>
+    </note>
+  </section>
+  <section xml:id="_end">
+    <title>End</title>
+    <simpara>&#8220;That&#8217;s all, folks!&#8221;</simpara>
+  </section>
+</article>
