@@ -1,6 +1,6 @@
 = Documentation as Code: Balancing Writing & Delivery with Asciidoctor
 Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
-:branch: master
+:branch: devoxxma-2016
 
 [abstract]
 --
@@ -19,7 +19,7 @@ Come discover how to get more out of your technical content by writing it in Asc
 
 == View online
 
-https://opendevise.github.io/presentation-documentation-as-code[Slides]
+https://opendevise.github.io/presentation-documentation-as-code/event/{branch}[Slides]
 &middot;
 https://github.com/opendevise/presentation-documentation-as-code/blob/{branch}/src/notes/script.adoc[Script]
 
