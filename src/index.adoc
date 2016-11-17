@@ -141,6 +141,11 @@ include::{uri-script}[tag=creation]
 
 == Writers Write
 
+[.cue]
+****
+include::{uri-script}[tag=writers-write]
+****
+
 == !
 image::goat-on-cliff.jpg[role=canvas]
 
@@ -188,6 +193,11 @@ include::{uri-script}[tag=docbook-ex-2]
 
 == !
 
+[.cue]
+****
+Moving on...
+****
+
 [.sheet%conceal]
 == LaTeX Example
 
@@ -230,6 +240,11 @@ include::{uri-script}[tag=got-pdf]
 ****
 
 == !
+
+[.cue]
+****
+Let's clean the slate.
+****
 
 [.sheet%conceal]
 == AsciiDoc Example
@@ -315,7 +330,7 @@ include::snippets/ex-lists.adoc[tag=ordered]
 
 [source,asciidoc]
 ----
-include::snippets/ex-multimedia.adoc[]
+include::snippets/ex-text-formatting.adoc[]
 ----
 
 [.sheet]
@@ -323,7 +338,7 @@ include::snippets/ex-multimedia.adoc[]
 
 [source,asciidoc]
 ----
-include::snippets/ex-text-formatting.adoc[]
+include::snippets/ex-multimedia.adoc[]
 ----
 
 [.sheet]
@@ -416,6 +431,21 @@ include::{uri-script}[tag=creation-recommended-practices]
 //include::{uri-script}[tag=migration]
 //****
 
+[.sheet]
+== !
+
+[source,asciidoc]
+------
+include::snippets/ex-includes.adoc[tag=chapter]
+
+include::snippets/ex-includes.adoc[tag=tag]
+------
+
+[.cue]
+****
+include::{uri-script}[tag=ex-includes]
+****
+
 == !
 image::breaking-dawn-longs-peak.jpg[role=canvas]
 
@@ -441,7 +471,7 @@ include::{uri-script}[tag=publication]
 * icon:file-text[] AsciiDoc
 ** syntax
 * icon:wrench[] Asciidoctor
-** parser + tools
+** processor
 
 [.cue]
 ****
@@ -494,7 +524,8 @@ Describe how to do the same thing in the XML editor.
 include::{uri-script}[tag=ex-extensions]
 ****
 
-== AST icon:random[fw]
+//== AST icon:random[fw]
+== Transformation icon:random[fw]
 
 [.cue]
 ****
@@ -548,6 +579,13 @@ include::{uri-script}[tag=aggregate]
 include::{uri-script}[tag=endless-possibilities]
 ****
 
+== Publication: Recommended Practices
+
+[.cue]
+****
+include::{uri-script}[tag=publication-recommended-practices]
+****
+
 == Push to Publish
 
 [.cue]
@@ -573,13 +611,6 @@ image::mountains-everywhere.jpg[role=canvas]
 [.cue]
 ****
 include::{uri-script}[tag=publish-everywhere]
-****
-
-== Publication: Recommended Practices
-
-[.cue]
-****
-include::{uri-script}[tag=publication-recommended-practices]
 ****
 
 [.topic]
@@ -611,6 +642,13 @@ include::{uri-script}[tag=redhat-endorsement]
 [.cue]
 ****
 include::{uri-script}[tag=redhat-endorsement]
+****
+
+== git icon:heart[] AsciiDoc
+
+[.cue]
+****
+include::{uri-script}[tag=source-control]
 ****
 
 == icon:github[] [.underline]#Edit on GitHub#

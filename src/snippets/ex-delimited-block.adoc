@@ -2,6 +2,7 @@
 ****
 Here's a sample AsciiDoc document:
 
+.Sample AsciiDoc document
 [source,asciidoc]
 ----
 = Document Title
@@ -11,5 +12,6 @@ Author Name
 We'll show you how easy it is to...
 ----
 
-The document header is not required.
+* The document header is not required.
+* You can set attributes via the commandline or API.
 ****

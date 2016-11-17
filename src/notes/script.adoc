@@ -6,14 +6,14 @@
 [duration=1m]
 // tag::title[]
 Welcome everyone!
-Today, I'm going to talk about how you can improve your documentation process, from writing through delivery, by treating documentation as code.
+Today, I'm going to talk about how you can improve your documentation process, from writing to delivery, by treating documentation as code.
 
 //HS: Don't give too much away here; move to conclusion?
 //It starts by authoring content in AsciiDoc and transforming it with Asciidoctor.
 //We'll then look at how this system ties into existing social coding infrastructure to enable better collaboration and adapts build tools and pipelines to automate publishing.
 What we're talking about here is reusing the tools and process for writing that you're already using for software development.
 
-But before we get into that, I want to share my earliest memory of publishing and how it relates to challenges in technical writing today.
+But before we get to that, I want to share my earliest memory of publishing and how it relates to challenges in technical writing today.
 // end::title[]
 
 [duration=3m]
@@ -21,7 +21,7 @@ But before we get into that, I want to share my earliest memory of publishing an
 
 // tag::imagewriter[]
 My first computer system was an Apple II with an ImageWriter.
-Anyone remember that setup?
+Anyone old enough to remember that setup?
 It was truly a magical machine of entertainment and possibility.
 // end::imagewriter[]
 // tag::print-shop-box[]
@@ -116,11 +116,13 @@ I'll start with the writers in the room.
 Rest assured, I'm with you.
 
 Like you, I believe content is king.
-I also believe a content system that doesn't consider the needs of the author first is just not sustainable.
+I also believe a content system won't be sustainable if it doesn't consider the needs of the author first.
 //alt: never going to work.
 Writers need a system that allows them to do what they do best.
-Writers write.
 // end::creation[]
+// tag::writers-write[]
+Writers write.
+// end::writers-write[]
 
 // tag::confined[]
 But many content systems seem determined to make this fundamental task as difficult as possible.
@@ -143,15 +145,14 @@ So far, so good, right?
 // end::docbook[]
 
 // tag::docbook-ex-2[]
-And you thought we were done.
+Oh, you thought that was it?
 
 //SAW: visual concept - image of a knotted mess or massive, sticky web/goo
 As a writer, would you want to weave your content in and out of this web day-in and day-out?
 Yeah, I didn't think so.
 
-The content is shackled by this structure.
 You have to enclose every chunk of content in an envelope of markup.
-It's so heavy.
+Your content gets shackled by this heavy structure.
 And there's the added burden of having to remember all the tags and when to use each of them.
 
 The ironic part is that the engineer didn't do herself much of a favor either.
@@ -162,7 +163,8 @@ Nobody wins.
 // end::docbook-ex-2[]
 
 // tag::latex-ex-1[]
-Moving on, how about this?
+//Moving on, how about this?
+How about this?
 Clearly, the engineer was having fun while the writer was away.
 This is LaTeX (LAH-tekh).
 // end::latex-ex-1[]
@@ -175,12 +177,12 @@ LaTeX is a documentation preparation system (read as: low-level language) for hi
 The message here--if you can even interpret it--is:
 "`I don't really see the difference between content, typesetting, and presentation, so I'll just mash all these concerns together.`"
 
-Writers get lost in this syntax, not only because it looks like a bird nest, but now there's this deluge of dialects that no mere mortal can possibly remember.
+Writers get lost in this syntax, not only because it looks like a bird nest, but now there's this deluge of dialects no mere mortal can possibly remember.
 //SAW: image concept - labrynth/maze which matches the "get lost" concept
 // end::latex-ex-2[]
 
 // tag::got-pdf[]
-The other major problem with LaTeX is that is was not designed with web publishing in mind.
+The other major issue with LaTeX is that is was not designed with web publishing in mind.
 PDF anyone?
 You're options are limited even before you've begun.
 
@@ -254,24 +256,23 @@ The writer gets to focus on what the content is saying, not how it looks.
 //DA: QUESTION should the point about line-oriented/left-align go right at beginning, before other characteristics?
 // tag::left-aligned-lines[]
 One reason the syntax is so simple and consistent is because it's both line-oriented and left-aligned.
+// end::left-aligned-lines[]
 
 //DA: TODO follow-up with an example of left-align and line-oriented
+// tag::ex-delimited-block[]
 Having a syntax that's aligned to the left margin helps keeps the writer rooted.
 You don't have to worry how much indentation you need and content doesn't float out into the ether.
 Instead, you rely on delimiter lines, or "`fences`" to encompass the content.
 AsciiDoc can then assume everything between those lines is content that belongs to that block.
 
-The line-oriented arrangement takes advantage of the fact that source code is organized in lines.
-A lot can be inferred from a line break in the content.
-The line serves as the boundaries of the node.
+//The line-oriented arrangement takes advantage of the fact that source code is organized in lines.
+//A lot can be inferred from a line break in the content.
+The line-oriented arrangements allows us use the line break to imply meaning.
+A line often serves as the boundaries of a node.
 Consecutive lines that start with an asterisk, for instance, are clearly items in a list.
 A line above a block that starts with a period is the block's title.
 We do the same thing when writing code.
 Each statement gets its own line, so there's no need for a semicolon to separate statements.
-// end::left-aligned-lines[]
-
-// tag::ex-delimited-block[]
-//LAR: give me an example slide with a result in it, please.
 // end::ex-delimited-block[]
 
 // tag::wysiwyg[]
@@ -286,7 +287,7 @@ Yeah, I don't think so.
 //I'm here to tell you that you don't need it.
 WYSIWYG places a barrier between you and your content and robs you of a lot of control.
 Unfortunately, it's an all too familiar input mechanism in a CMS.
-We should really call a CMS a CLS, a content lobotomy system.
+We should really call a CMS a content lobotomy system, or CLS.
 Instead of suiting your needs, it _seemingly_ solves your problem by making it impossible to do what you want to do.
 I like to say, "`You Get What You Get.`"
 //alt: What You Get Is What You Get (WYGIWYG)
@@ -309,7 +310,7 @@ As you can change, embellish, or restructure the document, you can see what the 
 I do believe tools such as Atom can go much further...maturing into a full blown IDE for writers.
 //Efforts are underway.
 Imagine Alt+Enter for synonyms.
-We're just steps away.
+We're not that far away.
 // end::ide-for-writers[]
 
 // tag::creation-recommended-practices[]
@@ -321,7 +322,9 @@ Most shops gravitate towards a subset of the markup.
 Dialects, particularly using roles, naturally emerge that bring additional consistency and reinforce the impression of simplicity.
 // See http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/
 You can prepare templates for common document types to help give writers an easy starting point.
+// end::creation-recommended-practices[]
 
+// tag::ex-includes[]
 // DA: TODO it feels like we should mention cross references here
 Another way to simplify writing with AsciiDoc is to partition large documents.
 For instance, you can split up the source of a book along chapter divisions.
@@ -329,7 +332,7 @@ You can also import common content or extracted code samples so they don't clutt
 AsciiDoc supports all this through its include mechanism.
 You can even include portions of another document by selecting the snippets by line number or tag.
 //DA: TODO recommend checking out the AsciiDoc Syntax Quick Reference and Awesome Asciidoctor.
-// end::creation-recommended-practices[]
+// end::ex-includes[]
 
 ////
 //DA: FIXME the topic of migration feels like it should be somewhere else
@@ -345,7 +348,7 @@ See me afterward and I can give you some pointers.
 Now that the content is encoded in AsciiDoc, who does the writer hand it off to and what can be done with it?
 
 The AsciiDoc syntax is so simple and elegant, it's easy to be deceived that it can only produce primitive output.
-You couldn't be more mistaken.
+That couldn't be further from the truth.
 The AsciiDoc content is just the raw material and its semantics are the seeds of the blossoms we'll produce.
 This is where engineers get to work their magic.
 
@@ -362,7 +365,7 @@ Engineers, wake up, this is for you.
 // end::publication[]
 
 // tag::asciidoc-vs-asciidoctor[]
-It's important to get some terminology out of the way before continuing.
+It's important to first get some terminology out of the way.
 
 [%hardbreaks]
 AsciiDoc is the language.
@@ -452,7 +455,7 @@ I like to call this "`push to publish.`"
 It's the modern day "`send it off to the printer.`"
 We're also borrowing a page from development by implementing continuous delivery for the documentation.
 
-The build should not only handle converting the content and publishing it to the various channels, but should describe and manage the infrastructure as well.
+//The build should not only handle converting the content and publishing it to the various channels, but should describe and manage the infrastructure as well.
 Treat your docs just like you would any other application.
 These automated builds also aid with collaboration, which we'll launch into next.
 //Anyone should be able to build the documentation for local preview.
@@ -478,12 +481,6 @@ This is where the harmony of writing and delivery comes together.
 
 AsciiDoc lends itself well to collaboration because many of the tools needed to collaborate on it are already in place in a development shop.
 In particular, AsciiDoc is ripe for collaboration because it's source control friendly.
-
-AsciiDoc doesn't specifically have "`source control support.`"
-Instead, it simply lends itself to being source controlled.
-No binary blobs, just plain text.
-And source control systems like git just _love_ plain text.
-You get history, source diffs, rich diffs, branching, merging, etc., all which can be managed through interfaces like GitHub, GitLab, and Bitbucket.
 // end::collaboration[]
 
 // tag::redhat-endorsement[]
@@ -492,6 +489,14 @@ This is a real force for contribution, as the JBoss BxMS and OpenShift teams can
 _(refer to quote in slide)_
 // end::redhat-endorsement[]
 
+// tag::source-control[]
+AsciiDoc doesn't specifically have "`source control support.`"
+Instead, it simply lends itself to being source controlled.
+No binary blobs, just plain text.
+And source control systems like git just _love_ plain text.
+You get history, source diffs, rich diffs, branching, merging, etc., all which can be managed through interfaces like GitHub, GitLab, and Bitbucket.
+// end::source-control[]
+
 // tag::edit-on-github[]
 It's hard to overstate the significance of GitHub (and, increasingly, GitLab) for collaboration.
 These interfaces have proven to be incredibly approachable and to encourage contribution.
@@ -499,13 +504,6 @@ These interfaces have proven to be incredibly approachable and to encourage cont
 Nothing is a stronger force for inviting participation than an "`Edit on GitHub`" link in your docs.
 It presents any page as editable, yet funnels the contributor into a web-based content review workflow based on git.
 The web-based editor recognizes AsciiDoc and can show a preview of it.
-// DA: Think Wikipedia for your docs, backed by git.
-// HS:
-What is a wiki, after all.
-It's for writing in some sort of markup language that you can edit on the web.
-We have all the advantages of a wiki, like Wikipedia, but it's also backed by git.
-
-You can benefit from the social coding phenomenon simply by moving your documentation to one of these platforms.
 
 As an aside, if you take this route, I strongly recommend investing in git training.
 Everyone on the team needs to understand how the git workflow behind the "`Edit on GitHub`" link works to truly benefit from it.
@@ -517,10 +515,15 @@ And, trust me, knowing how to use git correctly will save time and toes.
 // end::asciidoc-github-support[]
 
 // tag::docs-as-code[]
-All this leads to a strong-held belief of ours:
+// DA: Think Wikipedia for your docs, backed by git.
+// HS:
+What is a wiki, after all.
+It's for writing in some sort of markup language that you can edit on the web.
+We have all the advantages of a wiki, like Wikipedia, but it's also backed by git.
+You can benefit from the social coding phenomenon simply by moving your documentation to one of these platforms.
 
-[verse]
-Docs = Code
+All this leads to a strong-held belief of ours.
+Docs = Code.
 
 We have a long history in this industry of collaborating on code.
 If we view documentation as just another form of code, we can use code collaboration processes, practices, techniques, and tools to benefit our documentation.
@@ -589,13 +592,13 @@ Today, we evaluated Asciidoctor through the lens of three capabilities: creation
 In each case, it's proven to meet the needs of the respective stakeholders, which is essential for forming a robust content system.
 
 With AsciiDoc, writers are able to write with minimal interference from bloated markup and needless structure.
-They can focus on the words, the ideas, and the messages that reach millions of users across the globe, or just the person in the next cubicle, all because the content is separated from the presentation.
+They can focus on the words, the ideas, and the messages that reach millions of users across the globe, or just the person in the next cubicle, all because the content is separate from the presentation.
 
-Engineers are empowered as well since documentation is just another form of code.
+Engineers are empowered too since documentation is just another form of code.
 They can use Asciidoctor to transform the AsciiDoc and completely customize the generated output.
 #This is critical since content that's locked away cannot serve its function, and cannot reach its users across channels.#
 
-Finally, both writers and engineers--as well as anyone else involved in the end product--can collaborate in a systematic, streamlined way that eliminates duplicated effort or duplicated headaches.
+Finally, both writers and engineers--as well as anyone else involved in the end product--can collaborate in a systematic, streamlined way that eliminates duplicated effort and headaches.
 Like the technology it documents, technical writing benefits from many eyes and minds as anything inherently complex does.
 This is a system that welcomes their particiaption.
 It fuels collaboration, encouraging contributions to make good content great.
@@ -603,9 +606,11 @@ It fuels collaboration, encouraging contributions to make good content great.
 
 // tag::fin[]
 The Asciidoctor toolchain, from the AsciiDoc language to the Asciidoctor processor, extensions, and tools, brings all these ideas into one.
-While there's a bit more assembly required up front, I'm confident you'll find it blows any proprietary, closed system out of the water.
+//While there's a bit more assembly required up front, I'm confident you'll find it blows any proprietary, closed system out of the water.
+While there's a bit more assembly required up front, I'm confident you'll find treating documentation as code will drastically improve your documentation workflow and, as a result, the quality of your content.
+//it blows any proprietary, closed system out of the water.
 
-And since these capabilities happen to be the three pillars of the Asciidoctor project, we expect the story to only get better.
+//And since these capabilities happen to be the three pillars of the Asciidoctor project, we expect the story to only get better.
 
 Thank you!
 // end::fin[]
