@@ -6,7 +6,7 @@ Dan Allen
 :!sectids:
 :icons: font
 :imagesdir: images
-:source-highlighter: pygments
+:source-highlighter: highlightjs
 :pygments-style: bw
 :pygments-css: style
 :uri-script: notes/script.adoc
